@@ -9,7 +9,7 @@
 <grid distance="0.003125" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.003125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -71,8 +71,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -321,12 +321,6 @@
 <wire x1="74.7191125" y1="53.2878625" x2="74.2701" y2="53.101875" width="0.254" layer="122" curve="-45"/>
 <wire x1="74.2701" y1="53.101875" x2="54.371875" y2="53.101875" width="0.254" layer="122"/>
 <wire x1="54.371875" y1="53.101875" x2="53.736875" y2="53.736875" width="0.254" layer="122" curve="-90"/>
-<polygon width="0.1524" layer="122" spacing="0.8128">
-<vertex x="31.988125" y="12.779375"/>
-<vertex x="31.988125" y="15.71625"/>
-<vertex x="31.90875" y="12.779375"/>
-<vertex x="31.988125" y="12.85875"/>
-</polygon>
 <wire x1="39.37" y1="2.8575" x2="40.243125" y2="2.8575" width="0.1524" layer="122"/>
 <wire x1="75.565" y1="36.5125" x2="75.961875" y2="36.909375" width="0.1524" layer="122"/>
 <wire x1="75.565" y1="36.433125" x2="75.961875" y2="36.03625" width="0.1524" layer="122"/>
@@ -641,11 +635,6 @@
 <wire x1="74.7191125" y1="53.2878625" x2="74.2701" y2="53.101875" width="0.254" layer="121" curve="-45"/>
 <wire x1="74.2701" y1="53.101875" x2="54.371875" y2="53.101875" width="0.254" layer="121"/>
 <wire x1="54.371875" y1="53.101875" x2="53.736875" y2="53.736875" width="0.254" layer="121" curve="-90"/>
-<polygon width="0.1524" layer="122" spacing="0.8128">
-<vertex x="31.988125" y="15.71625"/>
-<vertex x="31.90875" y="12.779375"/>
-<vertex x="31.988125" y="12.85875"/>
-</polygon>
 <wire x1="35.163125" y1="16.589375" x2="35.69385" y2="16.589375" width="0.1524" layer="121"/>
 <wire x1="35.69385" y1="16.589375" x2="36.1428625" y2="16.4033875" width="0.1524" layer="121" curve="-45"/>
 <wire x1="36.1428625" y1="16.4033875" x2="37.1202625" y2="15.4259875" width="0.1524" layer="121"/>
