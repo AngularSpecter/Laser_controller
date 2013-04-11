@@ -9096,101 +9096,101 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="U2" library="TI" deviceset="ISO7221A_D_8" device=""/>
-<part name="JP5" library="jumper" deviceset="JP2QE" device=""/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C4" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="U6.2" library="TI" deviceset="ISO7221A_D_8" device=""/>
+<part name="H6.2" library="jumper" deviceset="JP2QE" device=""/>
+<part name="C6.5" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C6.4" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="U3" library="TI" deviceset="MAX232E_D_16" device=""/>
-<part name="U4" library="TI" deviceset="ISO7221A_D_8" device=""/>
+<part name="U8.2" library="TI" deviceset="MAX232E_D_16" device=""/>
+<part name="U8.3" library="TI" deviceset="ISO7221A_D_8" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="C5" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
-<part name="C6" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
-<part name="C7" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
-<part name="C8" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
-<part name="C10" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C11" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C8.4" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
+<part name="C8.6" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
+<part name="C8.8" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
+<part name="C8.7" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
+<part name="C8.10" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C8.9" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="U5" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
-<part name="U7" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
-<part name="C12" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="I2" library="adafruit" deviceset="FB" device="" value="3 uH"/>
-<part name="C13" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
-<part name="C14" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
-<part name="C15" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
-<part name="I3" library="adafruit" deviceset="FB" device="" value="3 uH"/>
-<part name="C16" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
-<part name="C17" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
-<part name="U6" library="TI" deviceset="REG101-3_DBV_5" device=""/>
-<part name="C18" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C19" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C20" library="adafruit" deviceset="C-US" device="C1206" value="0.01 uF"/>
+<part name="U8.1" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
+<part name="U6.1" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
+<part name="C8.3" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="L8.1" library="adafruit" deviceset="FB" device="" value="3 uH"/>
+<part name="C8.2" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
+<part name="C8.1" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
+<part name="C6.3" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
+<part name="L6.1" library="adafruit" deviceset="FB" device="" value="3 uH"/>
+<part name="C6.2" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
+<part name="C6.1" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
+<part name="U1.1" library="TI" deviceset="REG101-3_DBV_5" device=""/>
+<part name="C1.2" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C1.4" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C1.3" library="adafruit" deviceset="C-US" device="C1206" value="0.01 uF"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="X1" library="con-wago-500" deviceset="W237-102" device=""/>
-<part name="JP1" library="jumper" deviceset="JP4E" device=""/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="M1206" value="43k"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="M1206" value="43k"/>
+<part name="EXT_POWER" library="con-wago-500" deviceset="W237-102" device=""/>
+<part name="H8.2" library="jumper" deviceset="JP4E" device=""/>
+<part name="C8.5" library="adafruit" deviceset="C-US" device="C1206" value="1 uF"/>
+<part name="R5.1" library="adafruit" deviceset="R-US_" device="M1206" value="43k"/>
+<part name="R5.2" library="adafruit" deviceset="R-US_" device="M1206" value="43k"/>
 <part name="JP4" library="con-lsta" deviceset="FE07-2" device=""/>
 <part name="D1" library="adafruit" deviceset="DIODE" device="SOD-123"/>
-<part name="SV1" library="con-lsta" deviceset="FE08-2" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="M1206"/>
+<part name="H2.1" library="con-lsta" deviceset="FE08-2" device=""/>
+<part name="R2.2" library="adafruit" deviceset="R-US_" device="M1206"/>
 <part name="VR1" library="adafruit" deviceset="TRIMPOT" device="TC33X" value="10k"/>
-<part name="Q2" library="adafruit" deviceset="XTAL-4" device="-3225"/>
-<part name="U10" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
-<part name="U11" library="TI" deviceset="ISO7420_D_8" device="" value="ISO7420Fx">
+<part name="XTL" library="adafruit" deviceset="XTAL-4" device="-3225"/>
+<part name="U9.1" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
+<part name="U9.2" library="TI" deviceset="ISO7420_D_8" device="" value="ISO7420Fx">
 <attribute name="DATASHEETURL" value="http://www.ti.com/lit/gpn/ISO7420"/>
 <attribute name="DESCRIPTION" value="Low Power Dual Channel Isolators"/>
 <attribute name="GENERIC_PART_NUMBER" value="ISO7420"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="iso7420_d_8"/>
 </part>
-<part name="R14" library="adafruit" deviceset="R-US_" device="M1206" value="500k"/>
-<part name="JP3" library="jumper" deviceset="JP2E" device=""/>
-<part name="JP2" library="adafruit" deviceset="PINHD-2X4" device=""/>
-<part name="JP6" library="jumper" deviceset="JP2E" device=""/>
-<part name="I1" library="adafruit" deviceset="FB" device="" value="3 uH"/>
-<part name="C29" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
-<part name="C30" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
-<part name="U1" library="TI" deviceset="MSP430F5172_DA_38" device="" value="MSP430F5172"/>
-<part name="C31" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C32" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C33" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="C34" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
-<part name="U12" library="TI" deviceset="TS5A3357_DCU_8" device=""/>
-<part name="U13" library="TI" deviceset="TS5A3357_DCU_8" device=""/>
+<part name="R9.2" library="adafruit" deviceset="R-US_" device="M1206" value="500k"/>
+<part name="H9.1" library="jumper" deviceset="JP2E" device=""/>
+<part name="H6.1" library="adafruit" deviceset="PINHD-2X4" device=""/>
+<part name="H8.1" library="jumper" deviceset="JP2E" device=""/>
+<part name="L9.1" library="adafruit" deviceset="FB" device="" value="3 uH"/>
+<part name="C9.2" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
+<part name="C9.1" library="adafruit" deviceset="C-US" device="C1206" value="4.7 uF"/>
+<part name="MCU" library="TI" deviceset="MSP430F5172_DA_38" device="" value="MSP430F5172"/>
+<part name="C5.1" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C5.2" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C5.4" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="C5.3" library="adafruit" deviceset="C-US" device="C1206" value="0.1 uF"/>
+<part name="U6.3" library="TI" deviceset="TS5A3357_DCU_8" device=""/>
+<part name="U6.4" library="TI" deviceset="TS5A3357_DCU_8" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="500k"/>
-<part name="U8" library="TI" deviceset="TCA6416A_PW_24" device=""/>
-<part name="R7" library="resistor-bourns" deviceset="2QSP16-8" device="" value="100k"/>
-<part name="U$5" library="TI" deviceset="468M-801-XXX" device="" value="100 nF"/>
-<part name="R15" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
-<part name="SV3" library="con-lsta" deviceset="FE06-2" device=""/>
-<part name="U14" library="TI" deviceset="TLV2242_D_8" device=""/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="R1206" value="1M"/>
-<part name="R6" library="adafruit" deviceset="R-US_" device="R1206" value="0R"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="R1206" value="600k"/>
-<part name="R9" library="adafruit" deviceset="R-US_" device="R1206" value="400k"/>
-<part name="JP7" library="jumper" deviceset="JP2E" device=""/>
-<part name="C9" library="adafruit" deviceset="C-US" device="C1206" value="2.2 nF"/>
+<part name="R9.3" library="adafruit" deviceset="R-US_" device="M1206" value="500k"/>
+<part name="U2.1" library="TI" deviceset="TCA6416A_PW_24" device=""/>
+<part name="R3.1" library="resistor-bourns" deviceset="2QSP16-8" device="" value="100k"/>
+<part name="C3.1" library="TI" deviceset="468M-801-XXX" device="" value="100 nF"/>
+<part name="R2.1" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="H3.1" library="con-lsta" deviceset="FE06-2" device=""/>
+<part name="U4.1" library="TI" deviceset="TLV2242_D_8" device=""/>
+<part name="R4.1" library="adafruit" deviceset="R-US_" device="R1206" value="1M"/>
+<part name="R4.2" library="adafruit" deviceset="R-US_" device="R1206" value="0R"/>
+<part name="R4.3" library="adafruit" deviceset="R-US_" device="R1206" value="600k"/>
+<part name="R4.4" library="adafruit" deviceset="R-US_" device="R1206" value="400k"/>
+<part name="H7.1" library="jumper" deviceset="JP2E" device=""/>
+<part name="C7.1" library="adafruit" deviceset="C-US" device="C1206" value="2.2 nF"/>
 <part name="GND1" library="supply2" deviceset="GND" device=""/>
-<part name="R10" library="adafruit" deviceset="R-US_" device="M1206" value="47k"/>
-<part name="R11" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
-<part name="X3" library="con-molex" deviceset="C-GRID-06" device="-70553"/>
-<part name="C21" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
+<part name="R7.1" library="adafruit" deviceset="R-US_" device="M1206" value="47k"/>
+<part name="R9.1" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="C9.3" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
+<part name="LASER_COM" library="con-molex" deviceset="C-GRID-06" device="-70553"/>
+<part name="C1.1" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
 <part name="LED1" library="led" deviceset="LED" device="SMT1206"/>
-<part name="R12" library="adafruit" deviceset="R-US_" device="M1206" value="47k"/>
-<part name="LED2" library="led" deviceset="LED" device="SMT1206"/>
-<part name="LED3" library="led" deviceset="LED" device="SMT1206"/>
-<part name="R13" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
-<part name="R16" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
-<part name="LED4" library="led" deviceset="LED" device="SMT1206"/>
-<part name="LED5" library="led" deviceset="LED" device="SMT1206"/>
-<part name="R17" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
-<part name="R18" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
-<part name="LED6" library="led" deviceset="LED" device="SMT1206"/>
-<part name="R19" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="R1.1" library="adafruit" deviceset="R-US_" device="M1206" value="47k"/>
+<part name="LED8.3" library="led" deviceset="LED" device="SMT1206"/>
+<part name="LED8.4" library="led" deviceset="LED" device="SMT1206"/>
+<part name="R8.3" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="R8.4" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="LED8.1" library="led" deviceset="LED" device="SMT1206"/>
+<part name="LED8.2" library="led" deviceset="LED" device="SMT1206"/>
+<part name="R8.2" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="R8.1" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="LED9.1" library="led" deviceset="LED" device="SMT1206"/>
+<part name="R9.4" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9199,7 +9199,7 @@ Source: www.kingbright.com</description>
 ------------------------------
 Enabled when pins 1 and 2 on JP3 are shorted.
 Interlock is monitored by MCU and can be disabled by pulling the line low</text>
-<text x="25.4" y="78.74" size="1.778" layer="97">Laser SRC Truth table (U12)
+<text x="25.4" y="78.74" size="1.778" layer="97">Laser SRC Truth table (U6.3)
 ------------------------------------
 A  B  Function
 0  0  All off
@@ -9207,7 +9207,7 @@ A  B  Function
 0  1  Expansion Port output
 1  1  External Reference
 
-External SRC Truth table (U13)
+External SRC Truth table (U6.4)
 ------------------------------------
 A  B  Function
 0  0  All off
@@ -9266,157 +9266,157 @@ Microncontroller has both 3V and 5V IO (5V in bold).
 MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  </text>
 </plain>
 <instances>
-<instance part="U2" gate="A" x="-33.02" y="53.34"/>
-<instance part="JP5" gate="-1" x="-96.52" y="48.26" rot="R90"/>
-<instance part="JP5" gate="-2" x="-96.52" y="55.88" rot="R90"/>
-<instance part="C3" gate="G$1" x="-12.7" y="60.96" smashed="yes">
+<instance part="U6.2" gate="A" x="-33.02" y="53.34"/>
+<instance part="H6.2" gate="-1" x="-96.52" y="48.26" rot="R90"/>
+<instance part="H6.2" gate="-2" x="-96.52" y="55.88" rot="R90"/>
+<instance part="C6.5" gate="G$1" x="-12.7" y="60.96" smashed="yes">
 <attribute name="NAME" x="-11.684" y="61.595" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-13.589" y="61.976" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C4" gate="G$1" x="-58.42" y="68.58" smashed="yes" rot="R270">
+<instance part="C6.4" gate="G$1" x="-58.42" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="-62.484" y="71.755" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-54.864" y="66.929" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="-12.7" y="71.12" rot="R180"/>
 <instance part="SUPPLY7" gate="GND" x="-15.24" y="35.56"/>
-<instance part="U3" gate="A" x="-228.6" y="43.18"/>
-<instance part="U4" gate="A" x="-226.06" y="0"/>
+<instance part="U8.2" gate="A" x="-228.6" y="43.18"/>
+<instance part="U8.3" gate="A" x="-226.06" y="0"/>
 <instance part="SUPPLY2" gate="GND" x="-243.84" y="-33.02"/>
-<instance part="C5" gate="G$1" x="-203.2" y="55.88" smashed="yes" rot="R270">
+<instance part="C8.4" gate="G$1" x="-203.2" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="-202.565" y="54.864" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-207.391" y="54.864" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C6" gate="G$1" x="-261.62" y="50.8" smashed="yes" rot="R270">
+<instance part="C8.6" gate="G$1" x="-261.62" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="-265.176" y="52.705" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-260.858" y="51.435" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="-251.46" y="35.56" smashed="yes" rot="R90">
+<instance part="C8.8" gate="G$1" x="-251.46" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="-252.73" y="37.973" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-248.412" y="32.639" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="-261.62" y="43.18" smashed="yes" rot="R270">
+<instance part="C8.7" gate="G$1" x="-261.62" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="-265.176" y="45.593" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-261.112" y="43.561" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="-241.3" y="5.08" smashed="yes" rot="R180">
+<instance part="C8.10" gate="G$1" x="-241.3" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="-245.11" y="6.477" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-237.871" y="7.366" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C11" gate="G$1" x="-210.82" y="5.08" smashed="yes" rot="R180">
+<instance part="C8.9" gate="G$1" x="-210.82" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="-214.376" y="9.525" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-208.407" y="7.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY10" gate="GND" x="-241.3" y="17.78" rot="R180"/>
-<instance part="U5" gate="A" x="-233.68" y="76.2"/>
-<instance part="U7" gate="A" x="-88.9" y="93.98"/>
-<instance part="C12" gate="G$1" x="-203.2" y="66.04" smashed="yes" rot="R270">
+<instance part="U8.1" gate="A" x="-233.68" y="76.2"/>
+<instance part="U6.1" gate="A" x="-88.9" y="93.98"/>
+<instance part="C8.3" gate="G$1" x="-203.2" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="-202.565" y="65.024" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-207.391" y="65.024" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="I2" gate="G$1" x="-264.16" y="76.2" rot="R90"/>
-<instance part="C13" gate="G$1" x="-256.54" y="73.66"/>
-<instance part="C14" gate="G$1" x="-271.78" y="73.66"/>
-<instance part="C15" gate="G$1" x="-58.42" y="81.28" smashed="yes" rot="R270">
+<instance part="L8.1" gate="G$1" x="-264.16" y="76.2" rot="R90"/>
+<instance part="C8.2" gate="G$1" x="-256.54" y="73.66"/>
+<instance part="C8.1" gate="G$1" x="-271.78" y="73.66"/>
+<instance part="C6.3" gate="G$1" x="-58.42" y="81.28" smashed="yes" rot="R270">
 <attribute name="NAME" x="-62.484" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-54.356" y="80.391" size="1.778" layer="96"/>
 </instance>
-<instance part="I3" gate="G$1" x="-119.38" y="93.98" rot="R90"/>
-<instance part="C16" gate="G$1" x="-111.76" y="91.44"/>
-<instance part="C17" gate="G$1" x="-127" y="91.44"/>
-<instance part="U6" gate="A" x="-243.84" y="167.64"/>
-<instance part="C18" gate="G$1" x="-269.24" y="167.64" smashed="yes">
+<instance part="L6.1" gate="G$1" x="-119.38" y="93.98" rot="R90"/>
+<instance part="C6.2" gate="G$1" x="-111.76" y="91.44"/>
+<instance part="C6.1" gate="G$1" x="-127" y="91.44"/>
+<instance part="U1.1" gate="A" x="-243.84" y="167.64"/>
+<instance part="C1.2" gate="G$1" x="-269.24" y="167.64" smashed="yes">
 <attribute name="NAME" x="-272.415" y="163.576" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-265.049" y="161.036" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C19" gate="G$1" x="-213.36" y="167.64" smashed="yes">
+<instance part="C1.4" gate="G$1" x="-213.36" y="167.64" smashed="yes">
 <attribute name="NAME" x="-212.344" y="168.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-212.344" y="163.449" size="1.778" layer="96"/>
 </instance>
-<instance part="C20" gate="G$1" x="-220.98" y="165.1" smashed="yes">
+<instance part="C1.3" gate="G$1" x="-220.98" y="165.1" smashed="yes">
 <attribute name="NAME" x="-219.456" y="167.005" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-214.376" y="161.671" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY11" gate="GND" x="-213.36" y="149.86"/>
-<instance part="X1" gate="-1" x="-287.02" y="187.96"/>
-<instance part="X1" gate="-2" x="-287.02" y="180.34"/>
-<instance part="JP1" gate="G$1" x="-187.96" y="-27.94" rot="R270"/>
-<instance part="C1" gate="G$1" x="-251.46" y="55.88" smashed="yes" rot="R90">
+<instance part="EXT_POWER" gate="-1" x="-287.02" y="187.96"/>
+<instance part="EXT_POWER" gate="-2" x="-287.02" y="180.34"/>
+<instance part="H8.2" gate="G$1" x="-187.96" y="-27.94" rot="R270"/>
+<instance part="C8.5" gate="G$1" x="-251.46" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="-255.524" y="56.515" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-248.158" y="57.277" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="73.66" y="-25.4" rot="R90"/>
-<instance part="R3" gate="G$1" x="81.28" y="-20.32" rot="R90"/>
+<instance part="R5.1" gate="G$1" x="73.66" y="-25.4" rot="R90"/>
+<instance part="R5.2" gate="G$1" x="81.28" y="-20.32" rot="R90"/>
 <instance part="JP4" gate="G$1" x="190.5" y="160.02" rot="R180"/>
 <instance part="D1" gate="G$1" x="-198.12" y="170.18"/>
-<instance part="SV1" gate="G$1" x="-53.34" y="-152.4"/>
-<instance part="R4" gate="G$1" x="-101.6" y="-142.24" rot="R180"/>
+<instance part="H2.1" gate="G$1" x="-53.34" y="-152.4"/>
+<instance part="R2.2" gate="G$1" x="-101.6" y="-142.24" rot="R180"/>
 <instance part="VR1" gate="G$1" x="-109.22" y="-157.48"/>
-<instance part="Q2" gate="G$1" x="-86.36" y="198.12" rot="R180"/>
-<instance part="U10" gate="A" x="-35.56" y="-15.24"/>
-<instance part="U11" gate="A" x="-35.56" y="-40.64" rot="R180"/>
-<instance part="R14" gate="G$1" x="0" y="-35.56" rot="R180"/>
-<instance part="JP3" gate="1" x="17.78" y="-38.1" rot="R270"/>
-<instance part="JP2" gate="A" x="7.62" y="101.6" rot="R270"/>
-<instance part="JP6" gate="1" x="-172.72" y="45.72" rot="R270"/>
-<instance part="I1" gate="G$1" x="-73.66" y="-15.24" rot="R90"/>
-<instance part="C29" gate="G$1" x="-66.04" y="-17.78"/>
-<instance part="C30" gate="G$1" x="-81.28" y="-17.78"/>
-<instance part="U1" gate="A" x="-5.08" y="172.72"/>
-<instance part="C31" gate="G$1" x="-71.12" y="205.74" rot="R270"/>
-<instance part="C32" gate="G$1" x="83.82" y="180.34" smashed="yes">
+<instance part="XTL" gate="G$1" x="-86.36" y="198.12" rot="R180"/>
+<instance part="U9.1" gate="A" x="-35.56" y="-15.24"/>
+<instance part="U9.2" gate="A" x="-35.56" y="-40.64" rot="R180"/>
+<instance part="R9.2" gate="G$1" x="0" y="-35.56" rot="R180"/>
+<instance part="H9.1" gate="1" x="17.78" y="-38.1" rot="R270"/>
+<instance part="H6.1" gate="A" x="7.62" y="101.6" rot="R270"/>
+<instance part="H8.1" gate="1" x="-172.72" y="45.72" rot="R270"/>
+<instance part="L9.1" gate="G$1" x="-73.66" y="-15.24" rot="R90"/>
+<instance part="C9.2" gate="G$1" x="-66.04" y="-17.78"/>
+<instance part="C9.1" gate="G$1" x="-81.28" y="-17.78"/>
+<instance part="MCU" gate="A" x="-5.08" y="172.72"/>
+<instance part="C5.1" gate="G$1" x="-71.12" y="205.74" rot="R270"/>
+<instance part="C5.2" gate="G$1" x="83.82" y="180.34" smashed="yes">
 <attribute name="NAME" x="84.836" y="180.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="87.376" y="178.689" size="1.778" layer="96"/>
 </instance>
-<instance part="C33" gate="G$1" x="78.74" y="149.86" smashed="yes" rot="R180">
+<instance part="C5.4" gate="G$1" x="78.74" y="149.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="77.724" y="149.225" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="77.724" y="154.051" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C34" gate="G$1" x="83.82" y="170.18" smashed="yes" rot="R90">
+<instance part="C5.3" gate="G$1" x="83.82" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.376" y="168.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="89.916" y="170.307" size="1.778" layer="96"/>
 </instance>
-<instance part="U12" gate="A" x="55.88" y="50.8"/>
-<instance part="U13" gate="A" x="55.88" y="27.94"/>
+<instance part="U6.3" gate="A" x="55.88" y="50.8"/>
+<instance part="U6.4" gate="A" x="55.88" y="27.94"/>
 <instance part="SUPPLY1" gate="GND" x="40.64" y="12.7"/>
-<instance part="R5" gate="G$1" x="7.62" y="-38.1" rot="R180"/>
-<instance part="U8" gate="A" x="-53.34" y="-104.14"/>
-<instance part="R7" gate="A" x="162.56" y="-22.86" rot="R180"/>
-<instance part="U$5" gate="A" x="185.42" y="0" rot="R90"/>
-<instance part="R15" gate="G$1" x="-78.74" y="-96.52" rot="R180"/>
-<instance part="SV3" gate="G$1" x="220.98" y="-20.32" rot="R180"/>
-<instance part="U14" gate="A" x="195.58" y="99.06"/>
-<instance part="R1" gate="G$1" x="195.58" y="83.82"/>
-<instance part="R6" gate="G$1" x="220.98" y="83.82"/>
-<instance part="R8" gate="G$1" x="170.18" y="73.66"/>
-<instance part="R9" gate="G$1" x="195.58" y="73.66"/>
-<instance part="JP7" gate="1" x="170.18" y="170.18"/>
-<instance part="C9" gate="G$1" x="223.52" y="160.02"/>
+<instance part="R9.3" gate="G$1" x="7.62" y="-38.1" rot="R180"/>
+<instance part="U2.1" gate="A" x="-53.34" y="-104.14"/>
+<instance part="R3.1" gate="A" x="162.56" y="-22.86" rot="R180"/>
+<instance part="C3.1" gate="A" x="185.42" y="0" rot="R90"/>
+<instance part="R2.1" gate="G$1" x="-78.74" y="-96.52" rot="R180"/>
+<instance part="H3.1" gate="G$1" x="220.98" y="-20.32" rot="R180"/>
+<instance part="U4.1" gate="A" x="195.58" y="99.06"/>
+<instance part="R4.1" gate="G$1" x="195.58" y="83.82"/>
+<instance part="R4.2" gate="G$1" x="220.98" y="83.82"/>
+<instance part="R4.3" gate="G$1" x="170.18" y="73.66"/>
+<instance part="R4.4" gate="G$1" x="195.58" y="73.66"/>
+<instance part="H7.1" gate="1" x="170.18" y="170.18"/>
+<instance part="C7.1" gate="G$1" x="223.52" y="160.02"/>
 <instance part="GND1" gate="GND" x="223.52" y="152.4"/>
-<instance part="R10" gate="G$1" x="223.52" y="177.8" rot="R90"/>
-<instance part="R11" gate="G$1" x="-71.12" y="-40.64" rot="R180"/>
-<instance part="C2" gate="G$1" x="-7.62" y="-20.32" rot="R270"/>
-<instance part="X3" gate="-1" x="-248.92" y="-109.22" rot="R180"/>
-<instance part="X3" gate="-2" x="-248.92" y="-106.68" rot="R180"/>
-<instance part="X3" gate="-3" x="-248.92" y="-104.14" rot="R180"/>
-<instance part="X3" gate="-4" x="-248.92" y="-101.6" rot="R180"/>
-<instance part="X3" gate="-5" x="-248.92" y="-99.06" rot="R180"/>
-<instance part="X3" gate="-6" x="-248.92" y="-96.52" rot="R180"/>
-<instance part="C21" gate="G$1" x="-274.32" y="185.42" smashed="yes">
+<instance part="R7.1" gate="G$1" x="223.52" y="177.8" rot="R90"/>
+<instance part="R9.1" gate="G$1" x="-71.12" y="-40.64" rot="R180"/>
+<instance part="C9.3" gate="G$1" x="-7.62" y="-20.32" rot="R270"/>
+<instance part="LASER_COM" gate="-1" x="-248.92" y="-109.22" rot="R180"/>
+<instance part="LASER_COM" gate="-2" x="-248.92" y="-106.68" rot="R180"/>
+<instance part="LASER_COM" gate="-3" x="-248.92" y="-104.14" rot="R180"/>
+<instance part="LASER_COM" gate="-4" x="-248.92" y="-101.6" rot="R180"/>
+<instance part="LASER_COM" gate="-5" x="-248.92" y="-99.06" rot="R180"/>
+<instance part="LASER_COM" gate="-6" x="-248.92" y="-96.52" rot="R180"/>
+<instance part="C1.1" gate="G$1" x="-274.32" y="185.42" smashed="yes">
 <attribute name="NAME" x="-277.495" y="181.356" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-270.129" y="178.816" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-228.6" y="187.96" rot="R90"/>
-<instance part="R12" gate="G$1" x="-210.82" y="187.96" rot="R180"/>
-<instance part="LED2" gate="G$1" x="-200.66" y="-43.18" rot="R90"/>
-<instance part="LED3" gate="G$1" x="-200.66" y="-50.8" rot="R90"/>
-<instance part="R13" gate="G$1" x="-187.96" y="-43.18" rot="R180"/>
-<instance part="R16" gate="G$1" x="-187.96" y="-50.8" rot="R180"/>
-<instance part="LED4" gate="G$1" x="-261.62" y="-20.32"/>
-<instance part="LED5" gate="G$1" x="-254" y="-10.16"/>
-<instance part="R17" gate="G$1" x="-254" y="-22.86" rot="R270"/>
-<instance part="R18" gate="G$1" x="-261.62" y="-10.16" rot="R270"/>
-<instance part="LED6" gate="G$1" x="-50.8" y="-50.8"/>
-<instance part="R19" gate="G$1" x="-55.88" y="-58.42"/>
+<instance part="R1.1" gate="G$1" x="-210.82" y="187.96" rot="R180"/>
+<instance part="LED8.3" gate="G$1" x="-200.66" y="-43.18" rot="R90"/>
+<instance part="LED8.4" gate="G$1" x="-200.66" y="-50.8" rot="R90"/>
+<instance part="R8.3" gate="G$1" x="-187.96" y="-43.18" rot="R180"/>
+<instance part="R8.4" gate="G$1" x="-187.96" y="-50.8" rot="R180"/>
+<instance part="LED8.1" gate="G$1" x="-261.62" y="-20.32"/>
+<instance part="LED8.2" gate="G$1" x="-254" y="-10.16"/>
+<instance part="R8.2" gate="G$1" x="-254" y="-22.86" rot="R270"/>
+<instance part="R8.1" gate="G$1" x="-261.62" y="-10.16" rot="R270"/>
+<instance part="LED9.1" gate="G$1" x="-50.8" y="-50.8"/>
+<instance part="R9.4" gate="G$1" x="-55.88" y="-58.42"/>
 </instances>
 <busses>
 <bus name="DB[0..7]">
@@ -9444,17 +9444,17 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C6.5" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="63.5" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C8.10" gate="G$1" pin="2"/>
 <wire x1="-241.3" y1="10.16" x2="-241.3" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="GND2"/>
+<pinref part="U6.2" gate="A" pin="GND2"/>
 <wire x1="-17.78" y1="48.26" x2="-15.24" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="48.26" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
@@ -9462,29 +9462,29 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="-243.84" y1="-5.08" x2="-243.84" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="GND1"/>
+<pinref part="U8.3" gate="A" pin="GND1"/>
 <wire x1="-243.84" y1="-27.94" x2="-243.84" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="-5.08" x2="-243.84" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R8.2" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-27.94" x2="-243.84" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-243.84" y="-27.94"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED8.1" gate="G$1" pin="C"/>
 <wire x1="-261.62" y1="-25.4" x2="-261.62" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-261.62" y1="-27.94" x2="-254" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-254" y="-27.94"/>
 </segment>
 <segment>
-<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="C1.4" gate="G$1" pin="2"/>
 <wire x1="-213.36" y1="162.56" x2="-213.36" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="C1.2" gate="G$1" pin="2"/>
 <wire x1="-213.36" y1="157.48" x2="-220.98" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="157.48" x2="-259.08" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-259.08" y1="157.48" x2="-269.24" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-269.24" y1="157.48" x2="-269.24" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U6" gate="A" pin="GND"/>
+<pinref part="U1.1" gate="A" pin="GND"/>
 <wire x1="-259.08" y1="167.64" x2="-259.08" y2="157.48" width="0.1524" layer="91"/>
 <junction x="-259.08" y="157.48"/>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C1.3" gate="G$1" pin="2"/>
 <wire x1="-220.98" y1="160.02" x2="-220.98" y2="157.48" width="0.1524" layer="91"/>
 <junction x="-220.98" y="157.48"/>
 <wire x1="-213.36" y1="157.48" x2="-213.36" y2="152.4" width="0.1524" layer="91"/>
@@ -9492,19 +9492,19 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="EXT_POWER" gate="-2" pin="KL"/>
 <wire x1="-281.94" y1="180.34" x2="-274.32" y2="180.34" width="0.1524" layer="91"/>
 <label x="-259.08" y="180.34" size="1.778" layer="95"/>
-<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="C1.1" gate="G$1" pin="2"/>
 <wire x1="-274.32" y1="180.34" x2="-259.08" y2="180.34" width="0.1524" layer="91"/>
 <junction x="-274.32" y="180.34"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="VI-"/>
+<pinref part="U8.1" gate="A" pin="VI-"/>
 <wire x1="-246.38" y1="73.66" x2="-246.38" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="C8.2" gate="G$1" pin="2"/>
 <wire x1="-246.38" y1="68.58" x2="-256.54" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="C8.1" gate="G$1" pin="2"/>
 <wire x1="-256.54" y1="68.58" x2="-271.78" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-256.54" y="68.58"/>
 <wire x1="-271.78" y1="68.58" x2="-281.94" y2="68.58" width="0.1524" layer="91"/>
@@ -9512,24 +9512,24 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <label x="-281.94" y="68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="C6.2" gate="G$1" pin="2"/>
 <wire x1="-101.6" y1="86.36" x2="-111.76" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="C6.1" gate="G$1" pin="2"/>
 <wire x1="-111.76" y1="86.36" x2="-127" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-111.76" y="86.36"/>
 <wire x1="-127" y1="86.36" x2="-137.16" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-127" y="86.36"/>
 <label x="-137.16" y="86.36" size="1.778" layer="95" rot="R180"/>
-<pinref part="U7" gate="A" pin="VI-"/>
+<pinref part="U6.1" gate="A" pin="VI-"/>
 <wire x1="-101.6" y1="91.44" x2="-101.6" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="H8.2" gate="G$1" pin="2"/>
 <wire x1="-220.98" y1="-27.94" x2="-190.5" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-220.98" y="-27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="1"/>
+<pinref part="H2.1" gate="G$1" pin="1"/>
 <wire x1="-60.96" y1="-160.02" x2="-73.66" y2="-160.02" width="0.1524" layer="91"/>
 <label x="-114.3" y="-165.1" size="1.778" layer="95" rot="R180"/>
 <wire x1="-73.66" y1="-160.02" x2="-73.66" y2="-165.1" width="0.1524" layer="91"/>
@@ -9541,20 +9541,20 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </segment>
 <segment>
 <wire x1="-76.2" y1="187.96" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="G1"/>
+<pinref part="XTL" gate="G$1" pin="G1"/>
 <wire x1="-76.2" y1="205.74" x2="-76.2" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="205.74" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
 <junction x="-76.2" y="205.74"/>
 <label x="-76.2" y="213.36" size="1.778" layer="95" rot="R90"/>
-<pinref part="U1" gate="A" pin="AVSS"/>
+<pinref part="MCU" gate="A" pin="AVSS"/>
 <wire x1="-76.2" y1="187.96" x2="-60.96" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="2"/>
+<pinref part="C5.1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U10" gate="A" pin="VI-"/>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="U9.1" gate="A" pin="VI-"/>
+<pinref part="C9.2" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="-22.86" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C9.1" gate="G$1" pin="2"/>
 <wire x1="-66.04" y1="-22.86" x2="-81.28" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-66.04" y="-22.86"/>
 <wire x1="-81.28" y1="-22.86" x2="-91.44" y2="-22.86" width="0.1524" layer="91"/>
@@ -9566,41 +9566,41 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="7.62" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
 <label x="-5.08" y="88.9" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="H6.1" gate="A" pin="6"/>
 <wire x1="7.62" y1="96.52" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVSS"/>
+<pinref part="MCU" gate="A" pin="DVSS"/>
 <wire x1="50.8" y1="175.26" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C5.2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="175.26" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
 <junction x="83.82" y="175.26"/>
 <label x="91.44" y="175.26" size="1.778" layer="95"/>
-<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="C5.3" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="175.26" x2="91.44" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="170.18" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
 <junction x="88.9" y="175.26"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVSS_2"/>
+<pinref part="MCU" gate="A" pin="DVSS_2"/>
 <wire x1="50.8" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="C5.4" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
 <junction x="78.74" y="154.94"/>
 <label x="91.44" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U12" gate="A" pin="GND"/>
+<pinref part="U6.3" gate="A" pin="GND"/>
 <wire x1="43.18" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="48.26" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U13" gate="A" pin="GND"/>
+<pinref part="U6.4" gate="A" pin="GND"/>
 <wire x1="40.64" y1="25.4" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 <junction x="40.64" y="25.4"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="A" pin="BUS"/>
+<pinref part="C3.1" gate="A" pin="BUS"/>
 <wire x1="167.64" y1="-10.16" x2="172.72" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="12.7" x2="200.66" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="12.7" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
@@ -9608,38 +9608,38 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="200.66" y1="12.7" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
 <junction x="200.66" y="12.7"/>
 <label x="200.66" y="22.86" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$5" gate="A" pin="BUS2"/>
+<pinref part="C3.1" gate="A" pin="BUS2"/>
 <wire x1="193.04" y1="-10.16" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="GND"/>
+<pinref part="U2.1" gate="A" pin="GND"/>
 <wire x1="-71.12" y1="-119.38" x2="-73.66" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-73.66" y="-119.38" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="16"/>
+<pinref part="H2.1" gate="G$1" pin="16"/>
 <wire x1="-40.64" y1="-142.24" x2="-45.72" y2="-142.24" width="0.1524" layer="91"/>
 <label x="-40.64" y="-142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="G$1" pin="5"/>
+<pinref part="H3.1" gate="G$1" pin="5"/>
 <wire x1="228.6" y1="-20.32" x2="233.68" y2="-20.32" width="0.1524" layer="91"/>
 <label x="238.76" y="-20.32" size="1.778" layer="95"/>
 <wire x1="233.68" y1="-20.32" x2="238.76" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-20.32" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="233.68" y="-20.32"/>
-<pinref part="SV3" gate="G$1" pin="11"/>
+<pinref part="H3.1" gate="G$1" pin="11"/>
 <wire x1="233.68" y1="-27.94" x2="228.6" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U14" gate="A" pin="GND"/>
+<pinref part="U4.1" gate="A" pin="GND"/>
 <wire x1="180.34" y1="93.98" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R4.1" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="180.34" y="83.82"/>
 <label x="157.48" y="83.82" size="1.778" layer="95" rot="R180"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R4.3" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="73.66" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
@@ -9652,39 +9652,39 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <label x="203.2" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C7.1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U11" gate="A" pin="VCC2"/>
+<pinref part="U9.2" gate="A" pin="VCC2"/>
 <wire x1="-50.8" y1="-43.18" x2="-63.5" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="-43.18" x2="-63.5" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-73.66" y="-58.42" size="1.778" layer="95" rot="R180"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R9.4" gate="G$1" pin="1"/>
 <wire x1="-60.96" y1="-58.42" x2="-63.5" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="-58.42" x2="-71.12" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-63.5" y="-58.42"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="LASER_COM" gate="-2" pin="S"/>
 <wire x1="-246.38" y1="-106.68" x2="-226.06" y2="-106.68" width="0.1524" layer="91"/>
 <label x="-226.06" y="-106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="LASER_COM" gate="-1" pin="S"/>
 <wire x1="-246.38" y1="-109.22" x2="-226.06" y2="-109.22" width="0.1524" layer="91"/>
 <label x="-226.06" y="-109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R1.1" gate="G$1" pin="1"/>
 <wire x1="-205.74" y1="187.96" x2="-200.66" y2="187.96" width="0.1524" layer="91"/>
 <label x="-200.66" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R8.3" gate="G$1" pin="1"/>
 <wire x1="-182.88" y1="-43.18" x2="-175.26" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-175.26" y1="-43.18" x2="-175.26" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R8.4" gate="G$1" pin="1"/>
 <wire x1="-175.26" y1="-50.8" x2="-182.88" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-175.26" y1="-50.8" x2="-175.26" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-175.26" y="-50.8"/>
@@ -9693,7 +9693,7 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="LASER_ILK" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.3/PM_TD1.2"/>
+<pinref part="MCU" gate="A" pin="P2.3/PM_TD1.2"/>
 <wire x1="50.8" y1="149.86" x2="63.5" y2="149.86" width="0.4064" layer="91"/>
 <wire x1="63.5" y1="149.86" x2="63.5" y2="142.24" width="0.4064" layer="91"/>
 <label x="63.5" y="142.24" size="1.778" layer="95"/>
@@ -9701,30 +9701,30 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="-76.2" y1="-40.64" x2="-88.9" y2="-40.64" width="0.4064" layer="91"/>
 <label x="-91.44" y="-40.64" size="1.778" layer="95" rot="R180"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R9.1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-6" pin="S"/>
+<pinref part="LASER_COM" gate="-6" pin="S"/>
 <wire x1="-246.38" y1="-96.52" x2="-226.06" y2="-96.52" width="0.1524" layer="91"/>
 <label x="-226.06" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TTL_GND_ISO" class="0">
 <segment>
-<pinref part="JP5" gate="-2" pin="1"/>
+<pinref part="H6.2" gate="-2" pin="1"/>
 <wire x1="-93.98" y1="55.88" x2="-63.5" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="55.88" x2="-63.5" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U7" gate="A" pin="VO-"/>
+<pinref part="U6.1" gate="A" pin="VO-"/>
 <wire x1="-63.5" y1="68.58" x2="-63.5" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="81.28" x2="-63.5" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="91.44" x2="-63.5" y2="91.44" width="0.1524" layer="91"/>
 <label x="-66.04" y="66.04" size="1.778" layer="95" rot="R90"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C6.4" gate="G$1" pin="2"/>
 <junction x="-63.5" y="68.58"/>
-<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="C6.3" gate="G$1" pin="2"/>
 <junction x="-63.5" y="81.28"/>
-<pinref part="U2" gate="A" pin="GND1"/>
-<pinref part="JP5" gate="-1" pin="1"/>
+<pinref part="U6.2" gate="A" pin="GND1"/>
+<pinref part="H6.2" gate="-1" pin="1"/>
 <wire x1="-93.98" y1="48.26" x2="-63.5" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="48.26" x2="-45.72" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="55.88" x2="-63.5" y2="48.26" width="0.1524" layer="91"/>
@@ -9734,27 +9734,27 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="TTL_IN_ISO" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="INB"/>
+<pinref part="U6.2" gate="A" pin="INB"/>
 <wire x1="-93.98" y1="50.8" x2="-45.72" y2="50.8" width="0.4064" layer="91"/>
-<pinref part="JP5" gate="-1" pin="2"/>
+<pinref part="H6.2" gate="-1" pin="2"/>
 </segment>
 </net>
 <net name="TTL_IN" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.7/PM_TD0.1"/>
+<pinref part="MCU" gate="A" pin="P1.7/PM_TD0.1"/>
 <wire x1="-60.96" y1="157.48" x2="-88.9" y2="157.48" width="0.4064" layer="91"/>
 <label x="-88.9" y="157.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U12" gate="A" pin="NO2"/>
-<pinref part="U2" gate="A" pin="OUTB"/>
+<pinref part="U6.3" gate="A" pin="NO2"/>
+<pinref part="U6.2" gate="A" pin="OUTB"/>
 <wire x1="-17.78" y1="50.8" x2="0" y2="50.8" width="0.4064" layer="91"/>
 <wire x1="0" y1="50.8" x2="0" y2="71.12" width="0.4064" layer="91"/>
 <label x="0" y="71.12" size="1.778" layer="95" rot="R90"/>
 <wire x1="43.18" y1="50.8" x2="10.16" y2="50.8" width="0.4064" layer="91"/>
 <junction x="0" y="50.8"/>
 <label x="7.62" y="76.2" size="1.778" layer="95" rot="R270"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="H6.1" gate="A" pin="4"/>
 <wire x1="10.16" y1="50.8" x2="0" y2="50.8" width="0.4064" layer="91"/>
 <wire x1="10.16" y1="96.52" x2="10.16" y2="50.8" width="0.4064" layer="91"/>
 <junction x="10.16" y="50.8"/>
@@ -9762,10 +9762,10 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="TTL_OUT_ISO" class="0">
 <segment>
-<pinref part="JP5" gate="-2" pin="2"/>
+<pinref part="H6.2" gate="-2" pin="2"/>
 <wire x1="-93.98" y1="58.42" x2="-60.96" y2="58.42" width="0.4064" layer="91"/>
 <wire x1="-60.96" y1="58.42" x2="-60.96" y2="53.34" width="0.4064" layer="91"/>
-<pinref part="U2" gate="A" pin="OUTA"/>
+<pinref part="U6.2" gate="A" pin="OUTA"/>
 <wire x1="-60.96" y1="53.34" x2="-45.72" y2="53.34" width="0.4064" layer="91"/>
 </segment>
 </net>
@@ -9773,105 +9773,105 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <label x="-74.676" y="94.996" size="1.778" layer="95"/>
 <wire x1="-55.88" y1="55.88" x2="-55.88" y2="68.58" width="0.4064" layer="91"/>
-<pinref part="U7" gate="A" pin="VO+"/>
+<pinref part="U6.1" gate="A" pin="VO+"/>
 <wire x1="-55.88" y1="68.58" x2="-55.88" y2="81.28" width="0.4064" layer="91"/>
 <wire x1="-55.88" y1="81.28" x2="-55.88" y2="93.98" width="0.4064" layer="91"/>
 <wire x1="-55.88" y1="93.98" x2="-76.2" y2="93.98" width="0.4064" layer="91"/>
-<pinref part="U2" gate="A" pin="VCC1"/>
+<pinref part="U6.2" gate="A" pin="VCC1"/>
 <wire x1="-55.88" y1="55.88" x2="-45.72" y2="55.88" width="0.4064" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C6.3" gate="G$1" pin="1"/>
 <junction x="-55.88" y="81.28"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C6.4" gate="G$1" pin="1"/>
 <junction x="-55.88" y="68.58"/>
 </segment>
 </net>
 <net name="SERIAL_TX" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="DIN1"/>
+<pinref part="U8.2" gate="A" pin="DIN1"/>
 <wire x1="-210.82" y1="38.1" x2="-198.12" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-198.12" y1="38.1" x2="-198.12" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="OUTB"/>
+<pinref part="U8.3" gate="A" pin="OUTB"/>
 <wire x1="-198.12" y1="-2.54" x2="-210.82" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-198.12" y="2.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SERIAL_RX" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="ROUT1"/>
+<pinref part="U8.2" gate="A" pin="ROUT1"/>
 <wire x1="-210.82" y1="40.64" x2="-195.58" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-195.58" y1="40.64" x2="-195.58" y2="0" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="INA"/>
+<pinref part="U8.3" gate="A" pin="INA"/>
 <wire x1="-195.58" y1="0" x2="-210.82" y2="0" width="0.1524" layer="91"/>
 <label x="-195.58" y="7.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SERIAL_GND" class="0">
 <segment>
-<pinref part="U4" gate="A" pin="GND2"/>
+<pinref part="U8.3" gate="A" pin="GND2"/>
 <wire x1="-210.82" y1="-5.08" x2="-205.74" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-205.74" y1="-5.08" x2="-205.74" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-205.74" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="U8.2" gate="A" pin="GND"/>
+<pinref part="C8.4" gate="G$1" pin="1"/>
 <wire x1="-210.82" y1="48.26" x2="-200.66" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="48.26" x2="-200.66" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="55.88" x2="-200.66" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-200.66" y="55.88"/>
 <label x="-200.66" y="73.66" size="1.778" layer="95"/>
-<pinref part="U5" gate="A" pin="VO-"/>
+<pinref part="U8.1" gate="A" pin="VO-"/>
 <wire x1="-200.66" y1="66.04" x2="-200.66" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="73.66" x2="-200.66" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C8.3" gate="G$1" pin="1"/>
 <junction x="-200.66" y="66.04"/>
-<pinref part="JP6" gate="1" pin="1"/>
+<pinref part="H8.1" gate="1" pin="1"/>
 <wire x1="-175.26" y1="48.26" x2="-200.66" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-200.66" y="48.26"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C8.9" gate="G$1" pin="2"/>
 <wire x1="-210.82" y1="10.16" x2="-210.82" y2="17.78" width="0.1524" layer="91"/>
 <label x="-208.28" y="17.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C8.5" gate="G$1" pin="1"/>
 <wire x1="-254" y1="55.88" x2="-266.7" y2="55.88" width="0.1524" layer="91"/>
 <label x="-266.7" y="55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C8.8" gate="G$1" pin="1"/>
 <wire x1="-254" y1="35.56" x2="-266.7" y2="35.56" width="0.1524" layer="91"/>
 <label x="-266.7" y="35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RX1" class="0">
 <segment>
-<pinref part="U4" gate="A" pin="OUTA"/>
+<pinref part="U8.3" gate="A" pin="OUTA"/>
 <wire x1="-238.76" y1="0" x2="-254" y2="0" width="0.1524" layer="91"/>
 <label x="-264.16" y="0" size="1.778" layer="95" rot="R180"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="LED8.2" gate="G$1" pin="A"/>
 <wire x1="-254" y1="0" x2="-264.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="-254" y1="-7.62" x2="-254" y2="0" width="0.1524" layer="91"/>
 <junction x="-254" y="0"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P1.2/PM_UCA0RXD/PM_UCA0SOMI/A2*/CB2"/>
+<pinref part="MCU" gate="A" pin="P1.2/PM_UCA0RXD/PM_UCA0SOMI/A2*/CB2"/>
 <wire x1="-60.96" y1="180.34" x2="-88.9" y2="180.34" width="0.1524" layer="91"/>
 <label x="-88.9" y="180.34" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="C1+"/>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="U8.2" gate="A" pin="C1+"/>
+<pinref part="C8.6" gate="G$1" pin="1"/>
 <wire x1="-241.3" y1="50.8" x2="-259.08" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="C1-"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="U8.2" gate="A" pin="C1-"/>
+<pinref part="C8.6" gate="G$1" pin="2"/>
 <wire x1="-241.3" y1="45.72" x2="-256.54" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-256.54" y1="45.72" x2="-256.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-256.54" y1="48.26" x2="-266.7" y2="48.26" width="0.1524" layer="91"/>
@@ -9880,83 +9880,83 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="C2+"/>
+<pinref part="U8.2" gate="A" pin="C2+"/>
 <wire x1="-241.3" y1="43.18" x2="-259.08" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C8.7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="C2-"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="U8.2" gate="A" pin="C2-"/>
+<pinref part="C8.7" gate="G$1" pin="2"/>
 <wire x1="-241.3" y1="40.64" x2="-266.7" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-266.7" y1="40.64" x2="-266.7" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="VS-"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="U8.2" gate="A" pin="VS-"/>
+<pinref part="C8.8" gate="G$1" pin="2"/>
 <wire x1="-241.3" y1="38.1" x2="-246.38" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-246.38" y1="38.1" x2="-246.38" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="I2" gate="G$1" pin="2"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<pinref part="U5" gate="A" pin="VI+"/>
+<pinref part="L8.1" gate="G$1" pin="2"/>
+<pinref part="C8.2" gate="G$1" pin="1"/>
+<pinref part="U8.1" gate="A" pin="VI+"/>
 <wire x1="-256.54" y1="76.2" x2="-246.38" y2="76.2" width="0.4064" layer="91"/>
 <junction x="-256.54" y="76.2"/>
 </segment>
 </net>
 <net name="VCC_5V" class="0">
 <segment>
-<pinref part="I2" gate="G$1" pin="1"/>
-<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="L8.1" gate="G$1" pin="1"/>
+<pinref part="C8.1" gate="G$1" pin="1"/>
 <wire x1="-271.78" y1="76.2" x2="-281.94" y2="76.2" width="0.4064" layer="91"/>
 <junction x="-271.78" y="76.2"/>
 <label x="-281.94" y="76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="I3" gate="G$1" pin="1"/>
-<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="L6.1" gate="G$1" pin="1"/>
+<pinref part="C6.1" gate="G$1" pin="1"/>
 <wire x1="-127" y1="93.98" x2="-137.16" y2="93.98" width="0.4064" layer="91"/>
 <junction x="-127" y="93.98"/>
 <label x="-137.16" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="VIN"/>
-<pinref part="U6" gate="A" pin="ENABLE"/>
+<pinref part="U1.1" gate="A" pin="VIN"/>
+<pinref part="U1.1" gate="A" pin="ENABLE"/>
 <wire x1="-259.08" y1="170.18" x2="-269.24" y2="170.18" width="0.4064" layer="91"/>
 <wire x1="-226.06" y1="165.1" x2="-243.84" y2="165.1" width="0.4064" layer="91"/>
 <wire x1="-243.84" y1="165.1" x2="-243.84" y2="170.18" width="0.4064" layer="91"/>
 <wire x1="-243.84" y1="170.18" x2="-259.08" y2="170.18" width="0.4064" layer="91"/>
-<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="C1.2" gate="G$1" pin="1"/>
 <junction x="-269.24" y="170.18"/>
 <wire x1="-269.24" y1="170.18" x2="-281.94" y2="170.18" width="0.4064" layer="91"/>
 <label x="-284.48" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="EXT_POWER" gate="-1" pin="KL"/>
 <wire x1="-281.94" y1="187.96" x2="-274.32" y2="187.96" width="0.4064" layer="91"/>
 <label x="-259.08" y="187.96" size="1.778" layer="95"/>
-<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="C1.1" gate="G$1" pin="1"/>
 <wire x1="-274.32" y1="187.96" x2="-259.08" y2="187.96" width="0.4064" layer="91"/>
 <junction x="-274.32" y="187.96"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="H8.2" gate="G$1" pin="1"/>
 <wire x1="-190.5" y1="-25.4" x2="-220.98" y2="-25.4" width="0.4064" layer="91"/>
 <label x="-220.98" y="-25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="H2.1" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="-160.02" x2="-33.02" y2="-160.02" width="0.1524" layer="91"/>
 <label x="-33.02" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R2.2" gate="G$1" pin="2"/>
 <wire x1="-106.68" y1="-142.24" x2="-109.22" y2="-142.24" width="0.4064" layer="91"/>
 <label x="-111.76" y="-142.24" size="1.778" layer="95" rot="R180"/>
 <pinref part="VR1" gate="G$1" pin="E"/>
@@ -9965,36 +9965,36 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <junction x="-109.22" y="-142.24"/>
 </segment>
 <segment>
-<pinref part="I1" gate="G$1" pin="1"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="L9.1" gate="G$1" pin="1"/>
+<pinref part="C9.1" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="-15.24" x2="-91.44" y2="-15.24" width="0.4064" layer="91"/>
 <junction x="-81.28" y="-15.24"/>
 <label x="-91.44" y="-15.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVIO"/>
+<pinref part="MCU" gate="A" pin="DVIO"/>
 <wire x1="50.8" y1="152.4" x2="66.04" y2="152.4" width="0.4064" layer="91"/>
 <wire x1="66.04" y1="152.4" x2="66.04" y2="147.32" width="0.4064" layer="91"/>
 <wire x1="66.04" y1="147.32" x2="78.74" y2="147.32" width="0.4064" layer="91"/>
-<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="C5.4" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="147.32" x2="91.44" y2="147.32" width="0.4064" layer="91"/>
 <junction x="78.74" y="147.32"/>
 <label x="91.44" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="VCC2"/>
+<pinref part="U6.2" gate="A" pin="VCC2"/>
 <wire x1="-17.78" y1="55.88" x2="-12.7" y2="55.88" width="0.4064" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C6.5" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="55.88" x2="-5.08" y2="55.88" width="0.4064" layer="91"/>
 <wire x1="-5.08" y1="55.88" x2="-5.08" y2="71.12" width="0.4064" layer="91"/>
 <junction x="-12.7" y="55.88"/>
 <label x="-5.08" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U13" gate="A" pin="V+"/>
+<pinref part="U6.4" gate="A" pin="V+"/>
 <wire x1="68.58" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="33.02" x2="71.12" y2="55.88" width="0.4064" layer="91"/>
-<pinref part="U12" gate="A" pin="V+"/>
+<pinref part="U6.3" gate="A" pin="V+"/>
 <wire x1="71.12" y1="55.88" x2="71.12" y2="68.58" width="0.4064" layer="91"/>
 <wire x1="68.58" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <junction x="71.12" y="55.88"/>
@@ -10003,13 +10003,13 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="5.08" y1="91.44" x2="-5.08" y2="91.44" width="0.4064" layer="91"/>
 <label x="-5.08" y="91.44" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="H6.1" gate="A" pin="8"/>
 <wire x1="5.08" y1="96.52" x2="5.08" y2="91.44" width="0.4064" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="VCCP"/>
+<pinref part="U2.1" gate="A" pin="VCCP"/>
 <wire x1="-35.56" y1="-91.44" x2="-30.48" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="U8" gate="A" pin="ADDR"/>
+<pinref part="U2.1" gate="A" pin="ADDR"/>
 <wire x1="-30.48" y1="-91.44" x2="-22.86" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="-99.06" x2="-30.48" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-99.06" x2="-30.48" y2="-91.44" width="0.1524" layer="91"/>
@@ -10017,7 +10017,7 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <label x="-22.86" y="-91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U11" gate="A" pin="GND2"/>
+<pinref part="U9.2" gate="A" pin="GND2"/>
 <wire x1="-50.8" y1="-35.56" x2="-88.9" y2="-35.56" width="0.4064" layer="91"/>
 <label x="-88.9" y="-35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -10029,19 +10029,19 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="VCC_3V" class="0">
 <segment>
-<pinref part="U4" gate="A" pin="VCC1"/>
+<pinref part="U8.3" gate="A" pin="VCC1"/>
 <wire x1="-238.76" y1="2.54" x2="-241.3" y2="2.54" width="0.1524" layer="91"/>
 <label x="-264.16" y="2.54" size="1.778" layer="95" rot="R180"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C8.10" gate="G$1" pin="1"/>
 <junction x="-241.3" y="2.54"/>
 <wire x1="-264.16" y1="2.54" x2="-241.3" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R5.1" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="-30.48" x2="73.66" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="73.66" y="-30.48"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R5.2" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-25.4" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="81.28" y="-30.48"/>
@@ -10053,103 +10053,103 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <label x="-187.96" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="AVCC"/>
+<pinref part="MCU" gate="A" pin="AVCC"/>
 <wire x1="-60.96" y1="195.58" x2="-68.58" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="1"/>
+<pinref part="C5.1" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="195.58" x2="-68.58" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="205.74" x2="-68.58" y2="213.36" width="0.1524" layer="91"/>
 <junction x="-68.58" y="205.74"/>
 <label x="-68.58" y="213.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVCC"/>
+<pinref part="MCU" gate="A" pin="DVCC"/>
 <wire x1="50.8" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="177.8" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="182.88" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="C5.2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="182.88" x2="91.44" y2="182.88" width="0.1524" layer="91"/>
 <junction x="83.82" y="182.88"/>
 <label x="91.44" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="VCCI"/>
+<pinref part="U2.1" gate="A" pin="VCCI"/>
 <wire x1="-71.12" y1="-93.98" x2="-83.82" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R2.1" gate="G$1" pin="2"/>
 <wire x1="-83.82" y1="-93.98" x2="-91.44" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-96.52" x2="-83.82" y2="-93.98" width="0.1524" layer="91"/>
 <junction x="-83.82" y="-93.98"/>
 <label x="-91.44" y="-93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="G$1" pin="3"/>
+<pinref part="H3.1" gate="G$1" pin="3"/>
 <wire x1="228.6" y1="-17.78" x2="238.76" y2="-17.78" width="0.1524" layer="91"/>
 <label x="238.76" y="-17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U14" gate="A" pin="VCC"/>
+<pinref part="U4.1" gate="A" pin="VCC"/>
 <wire x1="210.82" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
 <label x="223.52" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="1" pin="2"/>
+<pinref part="H7.1" gate="1" pin="2"/>
 <wire x1="170.18" y1="167.64" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="165.1" x2="160.02" y2="165.1" width="0.1524" layer="91"/>
 <label x="160.02" y="165.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R7.1" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="182.88" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
 <label x="223.52" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="I3" gate="G$1" pin="2"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<pinref part="U7" gate="A" pin="VI+"/>
+<pinref part="L6.1" gate="G$1" pin="2"/>
+<pinref part="C6.2" gate="G$1" pin="1"/>
+<pinref part="U6.1" gate="A" pin="VI+"/>
 <wire x1="-101.6" y1="93.98" x2="-111.76" y2="93.98" width="0.4064" layer="91"/>
 <junction x="-111.76" y="93.98"/>
 </segment>
 </net>
 <net name="LASER_TTL" class="0">
 <segment>
-<pinref part="U12" gate="A" pin="COM"/>
+<pinref part="U6.3" gate="A" pin="COM"/>
 <wire x1="68.58" y1="53.34" x2="99.06" y2="53.34" width="0.4064" layer="91"/>
 <label x="101.6" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-5" pin="S"/>
+<pinref part="LASER_COM" gate="-5" pin="S"/>
 <wire x1="-246.38" y1="-99.06" x2="-226.06" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-226.06" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="NR/ADJUST"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="U1.1" gate="A" pin="NR/ADJUST"/>
+<pinref part="C1.3" gate="G$1" pin="1"/>
 <wire x1="-226.06" y1="167.64" x2="-220.98" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LASER_CURRENT" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R4.4" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="73.66" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 <label x="233.68" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-4" pin="S"/>
+<pinref part="LASER_COM" gate="-4" pin="S"/>
 <wire x1="-246.38" y1="-101.6" x2="-226.06" y2="-101.6" width="0.1524" layer="91"/>
 <label x="-226.06" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LASER_TEMPERATURE" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R4.2" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="83.82" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="233.68" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-3" pin="S"/>
+<pinref part="LASER_COM" gate="-3" pin="S"/>
 <wire x1="-246.38" y1="-104.14" x2="-226.06" y2="-104.14" width="0.1524" layer="91"/>
 <label x="-226.06" y="-104.14" size="1.778" layer="95"/>
 </segment>
@@ -10158,7 +10158,7 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <label x="71.12" y="187.96" size="1.778" layer="95"/>
 <wire x1="50.8" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="TEST/SBWTCK"/>
+<pinref part="MCU" gate="A" pin="TEST/SBWTCK"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="7"/>
@@ -10170,7 +10170,7 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="50.8" y1="190.5" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
 <label x="71.12" y="190.5" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="*RST/NMI/SBWTDIO"/>
+<pinref part="MCU" gate="A" pin="*RST/NMI/SBWTDIO"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
@@ -10182,8 +10182,8 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="223.52" y1="167.64" x2="223.52" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="167.64" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
 <junction x="223.52" y="167.64"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="C7.1" gate="G$1" pin="1"/>
+<pinref part="R7.1" gate="G$1" pin="1"/>
 <label x="231.14" y="167.64" size="1.778" layer="95"/>
 <wire x1="223.52" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
 </segment>
@@ -10191,23 +10191,23 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <net name="SDA" class="0">
 <segment>
 <wire x1="55.88" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R5.2" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="81.28" y="-15.24"/>
 <label x="55.88" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P1.4/PM_UCB0SIMO/PM_UCB0SDA/A4*/CB4"/>
+<pinref part="MCU" gate="A" pin="P1.4/PM_UCB0SIMO/PM_UCB0SDA/A4*/CB4"/>
 <wire x1="-60.96" y1="175.26" x2="-88.9" y2="175.26" width="0.1524" layer="91"/>
 <label x="-88.9" y="175.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="SDA"/>
+<pinref part="U2.1" gate="A" pin="SDA"/>
 <wire x1="15.24" y1="-93.98" x2="-35.56" y2="-93.98" width="0.1524" layer="91"/>
 <label x="15.24" y="-93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="G$1" pin="9"/>
+<pinref part="H3.1" gate="G$1" pin="9"/>
 <wire x1="228.6" y1="-25.4" x2="238.76" y2="-25.4" width="0.1524" layer="91"/>
 <label x="238.76" y="-25.4" size="1.778" layer="95"/>
 </segment>
@@ -10215,23 +10215,23 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <net name="SCL" class="0">
 <segment>
 <wire x1="55.88" y1="-20.32" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R5.1" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="-20.32" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="73.66" y="-20.32"/>
 <label x="55.88" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P1.5/PM_UCB0SOMI/PM_UCB0SCL/A5*/CB5"/>
+<pinref part="MCU" gate="A" pin="P1.5/PM_UCB0SOMI/PM_UCB0SCL/A5*/CB5"/>
 <wire x1="-60.96" y1="172.72" x2="-88.9" y2="172.72" width="0.1524" layer="91"/>
 <label x="-88.9" y="172.72" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="SCL"/>
+<pinref part="U2.1" gate="A" pin="SCL"/>
 <wire x1="-35.56" y1="-96.52" x2="15.24" y2="-96.52" width="0.1524" layer="91"/>
 <label x="15.24" y="-96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="G$1" pin="7"/>
+<pinref part="H3.1" gate="G$1" pin="7"/>
 <wire x1="228.6" y1="-22.86" x2="238.76" y2="-22.86" width="0.1524" layer="91"/>
 <label x="238.76" y="-22.86" size="1.778" layer="95"/>
 </segment>
@@ -10240,65 +10240,65 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="-220.98" y1="-33.02" x2="-210.82" y2="-33.02" width="0.1524" layer="91"/>
 <label x="-220.98" y="-33.02" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="H8.2" gate="G$1" pin="4"/>
 <wire x1="-210.82" y1="-33.02" x2="-190.5" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-210.82" y1="-33.02" x2="-210.82" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-210.82" y="-33.02"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED8.4" gate="G$1" pin="A"/>
 <wire x1="-210.82" y1="-50.8" x2="-203.2" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P3.6/PM_TA0.1/A7*/VEREF-*_/CB11"/>
+<pinref part="MCU" gate="A" pin="P3.6/PM_TA0.1/A7*/VEREF-*_/CB11"/>
 <wire x1="50.8" y1="195.58" x2="63.5" y2="195.58" width="0.1524" layer="91"/>
 <label x="63.5" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C8.5" gate="G$1" pin="2"/>
 <wire x1="-246.38" y1="55.88" x2="-246.38" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="VS+"/>
+<pinref part="U8.2" gate="A" pin="VS+"/>
 <wire x1="-246.38" y1="48.26" x2="-241.3" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX2" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="H8.2" gate="G$1" pin="3"/>
 <wire x1="-190.5" y1="-30.48" x2="-208.28" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-220.98" y="-30.48" size="1.778" layer="95" rot="R180"/>
 <wire x1="-208.28" y1="-30.48" x2="-220.98" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-208.28" y1="-30.48" x2="-208.28" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="-208.28" y="-30.48"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="LED8.3" gate="G$1" pin="A"/>
 <wire x1="-208.28" y1="-43.18" x2="-203.2" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P3.5/PM_TA0.2/A8*/VEREF+*/CB12"/>
+<pinref part="MCU" gate="A" pin="P3.5/PM_TA0.2/A8*/VEREF+*/CB12"/>
 <wire x1="50.8" y1="193.04" x2="63.5" y2="193.04" width="0.1524" layer="91"/>
 <label x="63.5" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX1" class="0">
 <segment>
-<pinref part="U4" gate="A" pin="INB"/>
+<pinref part="U8.3" gate="A" pin="INB"/>
 <wire x1="-238.76" y1="-2.54" x2="-261.62" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-264.16" y="-2.54" size="1.778" layer="95" rot="R180"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R8.1" gate="G$1" pin="1"/>
 <wire x1="-261.62" y1="-2.54" x2="-264.16" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-261.62" y1="-5.08" x2="-261.62" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-261.62" y="-2.54"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P1.1/PM_UCA0TXD/PM_UCA0SIMO/A1*/CB1"/>
+<pinref part="MCU" gate="A" pin="P1.1/PM_UCA0TXD/PM_UCA0SIMO/A1*/CB1"/>
 <wire x1="-60.96" y1="182.88" x2="-88.9" y2="182.88" width="0.1524" layer="91"/>
 <label x="-88.9" y="182.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="VCC_3V_SUPPLY" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="VOUT"/>
+<pinref part="U1.1" gate="A" pin="VOUT"/>
 <wire x1="-226.06" y1="170.18" x2="-213.36" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="C1.4" gate="G$1" pin="1"/>
 <junction x="-213.36" y="170.18"/>
 <wire x1="-213.36" y1="170.18" x2="-200.66" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -10306,92 +10306,92 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="RS232_TX" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="DOUT1"/>
+<pinref part="U8.2" gate="A" pin="DOUT1"/>
 <wire x1="-210.82" y1="45.72" x2="-175.26" y2="45.72" width="0.1524" layer="91"/>
 <label x="-190.5" y="45.72" size="1.778" layer="95"/>
-<pinref part="JP6" gate="1" pin="2"/>
+<pinref part="H8.1" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="RS232_RX" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="RIN1"/>
+<pinref part="U8.2" gate="A" pin="RIN1"/>
 <wire x1="-210.82" y1="43.18" x2="-175.26" y2="43.18" width="0.1524" layer="91"/>
 <label x="-193.04" y="43.18" size="1.778" layer="95"/>
-<pinref part="JP6" gate="1" pin="3"/>
+<pinref part="H8.1" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="RS" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="4"/>
+<pinref part="H2.1" gate="G$1" pin="4"/>
 <wire x1="-45.72" y1="-157.48" x2="-33.02" y2="-157.48" width="0.1524" layer="91"/>
 <label x="-33.02" y="-157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P10"/>
+<pinref part="U2.1" gate="A" pin="P10"/>
 <wire x1="-35.56" y1="-119.38" x2="-25.4" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-25.4" y="-119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="6"/>
+<pinref part="H2.1" gate="G$1" pin="6"/>
 <wire x1="-45.72" y1="-154.94" x2="-33.02" y2="-154.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="-154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P11"/>
+<pinref part="U2.1" gate="A" pin="P11"/>
 <wire x1="-35.56" y1="-116.84" x2="-25.4" y2="-116.84" width="0.1524" layer="91"/>
 <label x="-25.4" y="-116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB1" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="8"/>
+<pinref part="H2.1" gate="G$1" pin="8"/>
 <label x="-33.02" y="-152.4" size="1.778" layer="95"/>
 <wire x1="-45.72" y1="-152.4" x2="-17.78" y2="-152.4" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-152.4" x2="-17.78" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P01"/>
+<pinref part="U2.1" gate="A" pin="P01"/>
 <wire x1="-71.12" y1="-101.6" x2="-91.44" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB3" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="10"/>
+<pinref part="H2.1" gate="G$1" pin="10"/>
 <label x="-33.02" y="-149.86" size="1.778" layer="95"/>
 <wire x1="-45.72" y1="-149.86" x2="-17.78" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P03"/>
+<pinref part="U2.1" gate="A" pin="P03"/>
 <wire x1="-71.12" y1="-106.68" x2="-91.44" y2="-106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB5" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="12"/>
+<pinref part="H2.1" gate="G$1" pin="12"/>
 <label x="-33.02" y="-147.32" size="1.778" layer="95"/>
 <wire x1="-45.72" y1="-147.32" x2="-17.78" y2="-147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P05"/>
+<pinref part="U2.1" gate="A" pin="P05"/>
 <wire x1="-71.12" y1="-111.76" x2="-91.44" y2="-111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB7" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="14"/>
+<pinref part="H2.1" gate="G$1" pin="14"/>
 <label x="-33.02" y="-144.78" size="1.778" layer="95"/>
 <wire x1="-45.72" y1="-144.78" x2="-17.78" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P07"/>
+<pinref part="U2.1" gate="A" pin="P07"/>
 <wire x1="-71.12" y1="-116.84" x2="-91.44" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CONTRAST" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
+<pinref part="H2.1" gate="G$1" pin="3"/>
 <pinref part="VR1" gate="G$1" pin="S"/>
 <wire x1="-60.96" y1="-157.48" x2="-104.14" y2="-157.48" width="0.1524" layer="91"/>
 <label x="-104.14" y="-160.02" size="1.778" layer="95"/>
@@ -10399,65 +10399,65 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="R/W" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="5"/>
+<pinref part="H2.1" gate="G$1" pin="5"/>
 <wire x1="-60.96" y1="-154.94" x2="-73.66" y2="-154.94" width="0.1524" layer="91"/>
 <label x="-73.66" y="-154.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P12"/>
+<pinref part="U2.1" gate="A" pin="P12"/>
 <wire x1="-35.56" y1="-114.3" x2="-25.4" y2="-114.3" width="0.1524" layer="91"/>
 <label x="-25.4" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB0" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="7"/>
+<pinref part="H2.1" gate="G$1" pin="7"/>
 <wire x1="-60.96" y1="-152.4" x2="-83.82" y2="-152.4" width="0.1524" layer="91"/>
 <label x="-73.66" y="-152.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P00"/>
+<pinref part="U2.1" gate="A" pin="P00"/>
 <wire x1="-71.12" y1="-99.06" x2="-91.44" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB2" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="9"/>
+<pinref part="H2.1" gate="G$1" pin="9"/>
 <wire x1="-60.96" y1="-149.86" x2="-83.82" y2="-149.86" width="0.1524" layer="91"/>
 <label x="-73.66" y="-149.86" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P02"/>
+<pinref part="U2.1" gate="A" pin="P02"/>
 <wire x1="-71.12" y1="-104.14" x2="-91.44" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB4" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="11"/>
+<pinref part="H2.1" gate="G$1" pin="11"/>
 <wire x1="-60.96" y1="-147.32" x2="-83.82" y2="-147.32" width="0.1524" layer="91"/>
 <label x="-73.66" y="-147.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P04"/>
+<pinref part="U2.1" gate="A" pin="P04"/>
 <wire x1="-71.12" y1="-109.22" x2="-91.44" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DB6" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="13"/>
+<pinref part="H2.1" gate="G$1" pin="13"/>
 <wire x1="-60.96" y1="-144.78" x2="-83.82" y2="-144.78" width="0.1524" layer="91"/>
 <label x="-73.66" y="-144.78" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U8" gate="A" pin="P06"/>
+<pinref part="U2.1" gate="A" pin="P06"/>
 <wire x1="-71.12" y1="-114.3" x2="-91.44" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_LED" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="15"/>
+<pinref part="H2.1" gate="G$1" pin="15"/>
 <wire x1="-60.96" y1="-142.24" x2="-96.52" y2="-142.24" width="0.4064" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R2.2" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="-142.24" x2="-73.66" y2="-142.24" width="0.4064" layer="91"/>
 <junction x="-96.52" y="-142.24"/>
 </segment>
@@ -10466,28 +10466,28 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="-60.96" y1="193.04" x2="-81.28" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="193.04" x2="-81.28" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="X1"/>
-<pinref part="U1" gate="A" pin="PJ.4/XOUT"/>
+<pinref part="XTL" gate="G$1" pin="X1"/>
+<pinref part="MCU" gate="A" pin="PJ.4/XOUT"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <wire x1="-60.96" y1="190.5" x2="-91.44" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="X2"/>
+<pinref part="XTL" gate="G$1" pin="X2"/>
 <wire x1="-91.44" y1="190.5" x2="-91.44" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PJ.5/XIN"/>
+<pinref part="MCU" gate="A" pin="PJ.5/XIN"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U10" gate="A" pin="VO+"/>
+<pinref part="U9.1" gate="A" pin="VO+"/>
 <wire x1="-22.86" y1="-15.24" x2="-5.08" y2="-15.24" width="0.4064" layer="91"/>
 <wire x1="-5.08" y1="-15.24" x2="-5.08" y2="-20.32" width="0.4064" layer="91"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="-35.56" width="0.4064" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="R9.2" gate="G$1" pin="2"/>
+<pinref part="C9.3" gate="G$1" pin="1"/>
 <junction x="-5.08" y="-20.32"/>
-<pinref part="U11" gate="A" pin="VCC1"/>
+<pinref part="U9.2" gate="A" pin="VCC1"/>
 <wire x1="-20.32" y1="-43.18" x2="-5.08" y2="-43.18" width="0.4064" layer="91"/>
 <wire x1="-5.08" y1="-43.18" x2="-5.08" y2="-35.56" width="0.4064" layer="91"/>
 <junction x="-5.08" y="-35.56"/>
@@ -10495,74 +10495,74 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="U10" gate="A" pin="VO-"/>
+<pinref part="U9.1" gate="A" pin="VO-"/>
 <wire x1="-12.7" y1="-40.64" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-35.56" x2="-12.7" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-20.32" x2="-12.7" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-17.78" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="1" pin="3"/>
+<pinref part="H9.1" gate="1" pin="3"/>
 <wire x1="15.24" y1="-40.64" x2="-12.7" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C9.3" gate="G$1" pin="2"/>
 <junction x="-12.7" y="-20.32"/>
-<pinref part="U11" gate="A" pin="GND1"/>
+<pinref part="U9.2" gate="A" pin="GND1"/>
 <wire x1="-20.32" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-35.56"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R9.2" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="-35.56" x2="15.24" y2="-35.56" width="0.4064" layer="91"/>
-<pinref part="JP3" gate="1" pin="1"/>
+<pinref part="H9.1" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="MCU_TTL1" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.1/PM_TEC1FLT0/PM_TD1.2"/>
+<pinref part="MCU" gate="A" pin="P3.1/PM_TEC1FLT0/PM_TD1.2"/>
 <wire x1="50.8" y1="170.18" x2="66.04" y2="170.18" width="0.4064" layer="91"/>
 <label x="66.04" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U12" gate="A" pin="NO0"/>
+<pinref part="U6.3" gate="A" pin="NO0"/>
 <wire x1="43.18" y1="55.88" x2="33.02" y2="55.88" width="0.4064" layer="91"/>
 <label x="33.02" y="55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U13" gate="A" pin="NO2"/>
+<pinref part="U6.4" gate="A" pin="NO2"/>
 <wire x1="43.18" y1="27.94" x2="35.56" y2="27.94" width="0.4064" layer="91"/>
 <label x="35.56" y="27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="MCU_TTL2" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.0/PM_TEC1FLT2/PM_TD1.1"/>
+<pinref part="MCU" gate="A" pin="P3.0/PM_TEC1FLT2/PM_TD1.1"/>
 <wire x1="50.8" y1="167.64" x2="66.04" y2="167.64" width="0.4064" layer="91"/>
 <label x="66.04" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U13" gate="A" pin="NO0"/>
+<pinref part="U6.4" gate="A" pin="NO0"/>
 <wire x1="43.18" y1="33.02" x2="35.56" y2="33.02" width="0.4064" layer="91"/>
 <label x="35.56" y="33.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="VCORE"/>
-<pinref part="C34" gate="G$1" pin="1"/>
+<pinref part="MCU" gate="A" pin="VCORE"/>
+<pinref part="C5.3" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="172.72" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="172.72" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LASER_CURRENT_3V" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.0/PM_UCA0CLK/PM_UCB0STE/A0*/CB0"/>
+<pinref part="MCU" gate="A" pin="P1.0/PM_UCA0CLK/PM_UCB0STE/A0*/CB0"/>
 <wire x1="-60.96" y1="185.42" x2="-88.9" y2="185.42" width="0.1524" layer="91"/>
 <label x="-88.9" y="185.42" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U14" gate="A" pin="1OUT"/>
+<pinref part="U4.1" gate="A" pin="1OUT"/>
 <wire x1="180.34" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U14" gate="A" pin="1IN-"/>
+<pinref part="U4.1" gate="A" pin="1IN-"/>
 <wire x1="180.34" y1="99.06" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <junction x="180.34" y="101.6"/>
 <label x="170.18" y="101.6" size="1.778" layer="95" rot="R180"/>
@@ -10570,23 +10570,23 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="3VIO-5" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.2/PM_TD0.0/PM_SMCLK/CB14"/>
+<pinref part="MCU" gate="A" pin="P3.2/PM_TD0.0/PM_SMCLK/CB14"/>
 <wire x1="50.8" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
 <label x="63.5" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="10"/>
+<pinref part="R3.1" gate="A" pin="10"/>
 <wire x1="157.48" y1="-15.24" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TTL_OUT" class="0">
 <segment>
-<pinref part="U13" gate="A" pin="COM"/>
+<pinref part="U6.4" gate="A" pin="COM"/>
 <wire x1="68.58" y1="30.48" x2="99.06" y2="30.48" width="0.4064" layer="91"/>
 <label x="99.06" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="INA"/>
+<pinref part="U6.2" gate="A" pin="INA"/>
 <wire x1="-17.78" y1="53.34" x2="-2.54" y2="53.34" width="0.4064" layer="91"/>
 <wire x1="-2.54" y1="53.34" x2="-2.54" y2="71.12" width="0.4064" layer="91"/>
 <label x="-2.54" y="71.12" size="1.778" layer="95" rot="R90"/>
@@ -10594,49 +10594,49 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="EXT_TTL" class="0">
 <segment>
-<pinref part="U13" gate="A" pin="NO1"/>
-<pinref part="U12" gate="A" pin="NO1"/>
+<pinref part="U6.4" gate="A" pin="NO1"/>
+<pinref part="U6.3" gate="A" pin="NO1"/>
 <label x="15.24" y="66.04" size="1.778" layer="95" rot="R90"/>
 <wire x1="43.18" y1="53.34" x2="12.7" y2="53.34" width="0.4064" layer="91"/>
 <wire x1="43.18" y1="30.48" x2="12.7" y2="30.48" width="0.4064" layer="91"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="53.34" width="0.4064" layer="91"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="H6.1" gate="A" pin="2"/>
 <wire x1="12.7" y1="96.52" x2="12.7" y2="53.34" width="0.4064" layer="91"/>
 <junction x="12.7" y="53.34"/>
 </segment>
 </net>
 <net name="LASER_SRC-A" class="0">
 <segment>
-<pinref part="U12" gate="A" pin="IN1"/>
+<pinref part="U6.3" gate="A" pin="IN1"/>
 <wire x1="68.58" y1="50.8" x2="81.28" y2="50.8" width="0.4064" layer="91"/>
 <label x="81.28" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.7/PM_TEC1CLR/PM_TEC1FLT1/PM_TD1.0"/>
+<pinref part="MCU" gate="A" pin="P2.7/PM_TEC1CLR/PM_TEC1FLT1/PM_TD1.0"/>
 <wire x1="50.8" y1="165.1" x2="66.04" y2="165.1" width="0.4064" layer="91"/>
 <label x="66.04" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LASER_SRC-B" class="0">
 <segment>
-<pinref part="U12" gate="A" pin="IN2"/>
+<pinref part="U6.3" gate="A" pin="IN2"/>
 <wire x1="68.58" y1="48.26" x2="81.28" y2="48.26" width="0.4064" layer="91"/>
 <label x="81.28" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.6/PM_TEC0FLT1/PM_TD0.2"/>
+<pinref part="MCU" gate="A" pin="P2.6/PM_TEC0FLT1/PM_TD0.2"/>
 <wire x1="50.8" y1="162.56" x2="66.04" y2="162.56" width="0.4064" layer="91"/>
 <label x="66.04" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_SRC-A" class="0">
 <segment>
-<pinref part="U13" gate="A" pin="IN1"/>
+<pinref part="U6.4" gate="A" pin="IN1"/>
 <wire x1="68.58" y1="27.94" x2="78.74" y2="27.94" width="0.4064" layer="91"/>
 <label x="78.74" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.5/PM_TEC0FLT0/PM_TD0.1"/>
+<pinref part="MCU" gate="A" pin="P2.5/PM_TEC0FLT0/PM_TD0.1"/>
 <wire x1="50.8" y1="160.02" x2="66.04" y2="160.02" width="0.4064" layer="91"/>
 <label x="66.04" y="160.02" size="1.778" layer="95"/>
 </segment>
@@ -10645,165 +10645,165 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="66.04" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
 <label x="78.74" y="25.4" size="1.778" layer="95"/>
-<pinref part="U13" gate="A" pin="IN2"/>
+<pinref part="U6.4" gate="A" pin="IN2"/>
 <wire x1="68.58" y1="25.4" x2="78.74" y2="25.4" width="0.4064" layer="91"/>
 <junction x="68.58" y="25.4"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.4/PM_TEC0CLR/PM_TEC0FLT2_/PM_TD0.0"/>
+<pinref part="MCU" gate="A" pin="P2.4/PM_TEC0CLR/PM_TEC0FLT2_/PM_TD0.0"/>
 <wire x1="50.8" y1="157.48" x2="66.04" y2="157.48" width="0.4064" layer="91"/>
 <label x="66.04" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3VIO-6" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.6/TD1CLK/TD0.1/CB15"/>
+<pinref part="MCU" gate="A" pin="PJ.6/TD1CLK/TD0.1/CB15"/>
 <wire x1="50.8" y1="180.34" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
 <label x="63.5" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="9"/>
+<pinref part="R3.1" gate="A" pin="9"/>
 <wire x1="157.48" y1="-12.7" x2="149.86" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5VIO-3" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.2/PM_TD1.1"/>
+<pinref part="MCU" gate="A" pin="P2.2/PM_TD1.1"/>
 <wire x1="-60.96" y1="149.86" x2="-88.9" y2="149.86" width="0.4064" layer="91"/>
 <label x="-88.9" y="149.86" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="H6.1" gate="A" pin="1"/>
 <wire x1="12.7" y1="104.14" x2="12.7" y2="116.84" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="5VIO-2" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.1/PM___TD1.0"/>
+<pinref part="MCU" gate="A" pin="P2.1/PM___TD1.0"/>
 <wire x1="-60.96" y1="152.4" x2="-88.9" y2="152.4" width="0.4064" layer="91"/>
 <label x="-88.9" y="152.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="H6.1" gate="A" pin="3"/>
 <wire x1="10.16" y1="104.14" x2="10.16" y2="116.84" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="5VIO-1" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.0/PM_TD0.2"/>
+<pinref part="MCU" gate="A" pin="P2.0/PM_TD0.2"/>
 <wire x1="-60.96" y1="154.94" x2="-88.9" y2="154.94" width="0.4064" layer="91"/>
 <label x="-88.9" y="154.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="H6.1" gate="A" pin="5"/>
 <wire x1="7.62" y1="104.14" x2="7.62" y2="116.84" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="3VIO-3" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.3/ACLK/TCK/CB9"/>
+<pinref part="MCU" gate="A" pin="PJ.3/ACLK/TCK/CB9"/>
 <wire x1="-60.96" y1="162.56" x2="-88.9" y2="162.56" width="0.1524" layer="91"/>
 <label x="-88.9" y="162.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="12"/>
+<pinref part="R3.1" gate="A" pin="12"/>
 <wire x1="157.48" y1="-20.32" x2="149.86" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3VIO-2" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.2/ADC10CLK/TMS/CB8"/>
+<pinref part="MCU" gate="A" pin="PJ.2/ADC10CLK/TMS/CB8"/>
 <wire x1="-60.96" y1="165.1" x2="-88.9" y2="165.1" width="0.1524" layer="91"/>
 <label x="-88.9" y="165.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="13"/>
+<pinref part="R3.1" gate="A" pin="13"/>
 <wire x1="157.48" y1="-22.86" x2="149.86" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3VIO-1" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.1/MCLK/TDI/TCLK/CB7"/>
+<pinref part="MCU" gate="A" pin="PJ.1/MCLK/TDI/TCLK/CB7"/>
 <wire x1="-60.96" y1="167.64" x2="-88.9" y2="167.64" width="0.1524" layer="91"/>
 <label x="-88.9" y="167.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="14"/>
+<pinref part="R3.1" gate="A" pin="14"/>
 <wire x1="157.48" y1="-25.4" x2="149.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3VIO-0" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.0/SMCLK/TDO/CB6"/>
+<pinref part="MCU" gate="A" pin="PJ.0/SMCLK/TDO/CB6"/>
 <wire x1="-60.96" y1="170.18" x2="-88.9" y2="170.18" width="0.1524" layer="91"/>
 <label x="-88.9" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="15"/>
+<pinref part="R3.1" gate="A" pin="15"/>
 <wire x1="157.48" y1="-27.94" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL_VCC" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="VCC"/>
+<pinref part="U8.2" gate="A" pin="VCC"/>
 <wire x1="-210.82" y1="50.8" x2="-208.28" y2="50.8" width="0.4064" layer="91"/>
 <wire x1="-208.28" y1="50.8" x2="-208.28" y2="55.88" width="0.4064" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C8.4" gate="G$1" pin="2"/>
 <junction x="-208.28" y="55.88"/>
 <wire x1="-208.28" y1="55.88" x2="-208.28" y2="66.04" width="0.4064" layer="91"/>
-<pinref part="U5" gate="A" pin="VO+"/>
+<pinref part="U8.1" gate="A" pin="VO+"/>
 <wire x1="-208.28" y1="66.04" x2="-208.28" y2="76.2" width="0.4064" layer="91"/>
 <wire x1="-208.28" y1="76.2" x2="-220.98" y2="76.2" width="0.4064" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C8.3" gate="G$1" pin="2"/>
 <junction x="-208.28" y="66.04"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="VCC2"/>
+<pinref part="U8.3" gate="A" pin="VCC2"/>
 <wire x1="-210.82" y1="2.54" x2="-203.2" y2="2.54" width="0.4064" layer="91"/>
 <label x="-203.2" y="2.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C8.9" gate="G$1" pin="1"/>
 <junction x="-210.82" y="2.54"/>
 </segment>
 </net>
 <net name="5VIO-0" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.6/PM_TD0.0"/>
+<pinref part="MCU" gate="A" pin="P1.6/PM_TD0.0"/>
 <wire x1="-60.96" y1="160.02" x2="-88.9" y2="160.02" width="0.4064" layer="91"/>
 <label x="-88.9" y="160.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="H6.1" gate="A" pin="7"/>
 <wire x1="5.08" y1="104.14" x2="5.08" y2="116.84" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="3VIO-4" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.3/PM_TA0CLK/PM_CBOUT/CB13"/>
+<pinref part="MCU" gate="A" pin="P3.3/PM_TA0CLK/PM_CBOUT/CB13"/>
 <wire x1="50.8" y1="185.42" x2="63.5" y2="185.42" width="0.1524" layer="91"/>
 <label x="63.5" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="A" pin="11"/>
+<pinref part="R3.1" gate="A" pin="11"/>
 <wire x1="157.48" y1="-17.78" x2="149.86" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="1" pin="2"/>
+<pinref part="R9.3" gate="G$1" pin="1"/>
+<pinref part="H9.1" gate="1" pin="2"/>
 <wire x1="12.7" y1="-38.1" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LASER_TEMPERATURE_3V" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.3/PM_UCB0CLK/PM_UCA0STE/A3*/CB3"/>
+<pinref part="MCU" gate="A" pin="P1.3/PM_UCB0CLK/PM_UCA0STE/A3*/CB3"/>
 <wire x1="-60.96" y1="177.8" x2="-88.9" y2="177.8" width="0.1524" layer="91"/>
 <label x="-88.9" y="177.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U14" gate="A" pin="2OUT"/>
+<pinref part="U4.1" gate="A" pin="2OUT"/>
 <wire x1="210.82" y1="99.06" x2="223.52" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U14" gate="A" pin="2IN-"/>
+<pinref part="U4.1" gate="A" pin="2IN-"/>
 <wire x1="210.82" y1="99.06" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
 <junction x="210.82" y="99.06"/>
 <label x="223.52" y="99.06" size="1.778" layer="95"/>
@@ -10811,10 +10811,10 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R4.1" gate="G$1" pin="2"/>
+<pinref part="R4.2" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U14" gate="A" pin="2IN+"/>
+<pinref part="U4.1" gate="A" pin="2IN+"/>
 <wire x1="210.82" y1="93.98" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 <junction x="210.82" y="83.82"/>
 <wire x1="210.82" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
@@ -10822,10 +10822,10 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R4.3" gate="G$1" pin="2"/>
+<pinref part="R4.4" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U14" gate="A" pin="1IN+"/>
+<pinref part="U4.1" gate="A" pin="1IN+"/>
 <wire x1="177.8" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="96.52" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
@@ -10835,13 +10835,13 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <net name="N$17" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<pinref part="JP7" gate="1" pin="3"/>
+<pinref part="H7.1" gate="1" pin="3"/>
 <wire x1="182.88" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="JP7" gate="1" pin="1"/>
+<pinref part="H7.1" gate="1" pin="1"/>
 <wire x1="167.64" y1="162.56" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="4"/>
 <wire x1="182.88" y1="165.1" x2="175.26" y2="165.1" width="0.1524" layer="91"/>
@@ -10851,8 +10851,8 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U8" gate="A" pin="*RESET"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="U2.1" gate="A" pin="*RESET"/>
+<pinref part="R2.1" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="-96.52" x2="-73.66" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10860,12 +10860,12 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <label x="200.66" y="-12.7" size="1.778" layer="95"/>
 <wire x1="213.36" y1="-12.7" x2="213.36" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="1"/>
+<pinref part="H3.1" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="-10.16" x2="228.6" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="-10.16" x2="228.6" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R7" gate="A" pin="8"/>
+<pinref part="R3.1" gate="A" pin="8"/>
 <wire x1="167.64" y1="-12.7" x2="175.26" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="1"/>
+<pinref part="C3.1" gate="A" pin="1"/>
 <wire x1="175.26" y1="-12.7" x2="175.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-12.7" x2="213.36" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="175.26" y="-12.7"/>
@@ -10873,81 +10873,81 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </net>
 <net name="3VIO-1H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="7"/>
+<pinref part="R3.1" gate="A" pin="7"/>
 <wire x1="167.64" y1="-15.24" x2="177.8" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="2"/>
+<pinref part="C3.1" gate="A" pin="2"/>
 <wire x1="177.8" y1="-15.24" x2="213.36" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-10.16" x2="177.8" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="177.8" y="-15.24"/>
 <label x="200.66" y="-15.24" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="2"/>
+<pinref part="H3.1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="3VIO-2H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="6"/>
+<pinref part="R3.1" gate="A" pin="6"/>
 <wire x1="167.64" y1="-17.78" x2="180.34" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="3"/>
+<pinref part="C3.1" gate="A" pin="3"/>
 <wire x1="180.34" y1="-17.78" x2="213.36" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-10.16" x2="180.34" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="180.34" y="-17.78"/>
 <label x="200.66" y="-17.78" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="4"/>
+<pinref part="H3.1" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="3VIO-3H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="5"/>
+<pinref part="R3.1" gate="A" pin="5"/>
 <wire x1="167.64" y1="-20.32" x2="182.88" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="4"/>
+<pinref part="C3.1" gate="A" pin="4"/>
 <wire x1="182.88" y1="-20.32" x2="213.36" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-10.16" x2="182.88" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="182.88" y="-20.32"/>
 <label x="200.66" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="6"/>
+<pinref part="H3.1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="3VIO-4H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="4"/>
+<pinref part="R3.1" gate="A" pin="4"/>
 <wire x1="167.64" y1="-22.86" x2="185.42" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="5"/>
+<pinref part="C3.1" gate="A" pin="5"/>
 <wire x1="185.42" y1="-22.86" x2="213.36" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-10.16" x2="185.42" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="185.42" y="-22.86"/>
 <label x="200.66" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="8"/>
+<pinref part="H3.1" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="3VIO-5H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="3"/>
+<pinref part="R3.1" gate="A" pin="3"/>
 <wire x1="167.64" y1="-25.4" x2="187.96" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="6"/>
+<pinref part="C3.1" gate="A" pin="6"/>
 <wire x1="187.96" y1="-10.16" x2="187.96" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="187.96" y="-25.4"/>
 <label x="200.66" y="-25.4" size="1.778" layer="95"/>
 <wire x1="187.96" y1="-25.4" x2="213.36" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="10"/>
+<pinref part="H3.1" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="3VIO-6H" class="0">
 <segment>
-<pinref part="R7" gate="A" pin="2"/>
+<pinref part="R3.1" gate="A" pin="2"/>
 <wire x1="167.64" y1="-27.94" x2="190.5" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="A" pin="7"/>
+<pinref part="C3.1" gate="A" pin="7"/>
 <wire x1="190.5" y1="-10.16" x2="190.5" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="190.5" y="-27.94"/>
 <label x="200.66" y="-27.94" size="1.778" layer="95"/>
 <wire x1="190.5" y1="-27.94" x2="213.36" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="12"/>
+<pinref part="H3.1" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="ITL_POWER" class="0">
 <segment>
-<pinref part="U10" gate="A" pin="VI+"/>
-<pinref part="I1" gate="G$1" pin="2"/>
-<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="U9.1" gate="A" pin="VI+"/>
+<pinref part="L9.1" gate="G$1" pin="2"/>
+<pinref part="C9.2" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="-15.24" x2="-48.26" y2="-15.24" width="0.4064" layer="91"/>
 <junction x="-66.04" y="-15.24"/>
 </segment>
@@ -10956,17 +10956,17 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <segment>
 <wire x1="-58.42" y1="-38.1" x2="-58.42" y2="-40.64" width="0.4064" layer="91"/>
 <wire x1="-58.42" y1="-40.64" x2="-66.04" y2="-40.64" width="0.4064" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="U11" gate="A" pin="OUTB"/>
+<pinref part="R9.1" gate="G$1" pin="1"/>
+<pinref part="U9.2" gate="A" pin="OUTB"/>
 <wire x1="-58.42" y1="-38.1" x2="-50.8" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="INB"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="U9.2" gate="A" pin="INB"/>
+<pinref part="R9.3" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="-38.1" x2="2.54" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="U11" gate="A" pin="INA"/>
+<pinref part="U9.2" gate="A" pin="INA"/>
 <wire x1="-20.32" y1="-38.1" x2="-20.32" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-38.1"/>
 </segment>
@@ -10974,49 +10974,49 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <net name="N$25" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R1.1" gate="G$1" pin="2"/>
 <wire x1="-223.52" y1="187.96" x2="-215.9" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="LED8.3" gate="G$1" pin="C"/>
+<pinref part="R8.3" gate="G$1" pin="2"/>
 <wire x1="-195.58" y1="-43.18" x2="-193.04" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="LED8.4" gate="G$1" pin="C"/>
+<pinref part="R8.4" gate="G$1" pin="2"/>
 <wire x1="-195.58" y1="-50.8" x2="-193.04" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="R8.2" gate="G$1" pin="1"/>
+<pinref part="LED8.2" gate="G$1" pin="C"/>
 <wire x1="-254" y1="-17.78" x2="-254" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="LED8.1" gate="G$1" pin="A"/>
+<pinref part="R8.1" gate="G$1" pin="2"/>
 <wire x1="-261.62" y1="-17.78" x2="-261.62" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="LED9.1" gate="G$1" pin="C"/>
+<pinref part="R9.4" gate="G$1" pin="2"/>
 <wire x1="-50.8" y1="-55.88" x2="-50.8" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="OUTA"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="U9.2" gate="A" pin="OUTA"/>
+<pinref part="LED9.1" gate="G$1" pin="A"/>
 <wire x1="-50.8" y1="-40.64" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
