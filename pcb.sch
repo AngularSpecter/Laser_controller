@@ -9540,17 +9540,6 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <junction x="-109.22" y="-165.1"/>
 </segment>
 <segment>
-<wire x1="-76.2" y1="187.96" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="XTL" gate="G$1" pin="G1"/>
-<wire x1="-76.2" y1="205.74" x2="-76.2" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="205.74" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
-<junction x="-76.2" y="205.74"/>
-<label x="-76.2" y="213.36" size="1.778" layer="95" rot="R90"/>
-<pinref part="MCU" gate="A" pin="AVSS"/>
-<wire x1="-76.2" y1="187.96" x2="-60.96" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C5.1" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="U9.1" gate="A" pin="VI-"/>
 <pinref part="C9.2" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="-22.86" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
@@ -9575,9 +9564,9 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <pinref part="C5.2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="175.26" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
 <junction x="83.82" y="175.26"/>
-<label x="91.44" y="175.26" size="1.778" layer="95"/>
+<label x="99.06" y="175.26" size="1.778" layer="95"/>
 <pinref part="C5.3" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="175.26" x2="91.44" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="175.26" x2="96.52" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="170.18" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
 <junction x="88.9" y="175.26"/>
 </segment>
@@ -9632,20 +9621,6 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="233.68" y1="-27.94" x2="228.6" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4.1" gate="A" pin="GND"/>
-<wire x1="180.34" y1="93.98" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R4.1" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<junction x="180.34" y="83.82"/>
-<label x="157.48" y="83.82" size="1.778" layer="95" rot="R180"/>
-<pinref part="R4.3" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="73.66" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<junction x="162.56" y="83.82"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="9"/>
 <wire x1="198.12" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="157.48" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
@@ -9666,16 +9641,6 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <junction x="-63.5" y="-58.42"/>
 </segment>
 <segment>
-<pinref part="LASER_COM" gate="-2" pin="S"/>
-<wire x1="-246.38" y1="-106.68" x2="-226.06" y2="-106.68" width="0.1524" layer="91"/>
-<label x="-226.06" y="-106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LASER_COM" gate="-1" pin="S"/>
-<wire x1="-246.38" y1="-109.22" x2="-226.06" y2="-109.22" width="0.1524" layer="91"/>
-<label x="-226.06" y="-109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R1.1" gate="G$1" pin="1"/>
 <wire x1="-205.74" y1="187.96" x2="-200.66" y2="187.96" width="0.1524" layer="91"/>
 <label x="-200.66" y="187.96" size="1.778" layer="95"/>
@@ -9689,6 +9654,17 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="-175.26" y1="-50.8" x2="-175.26" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-175.26" y="-50.8"/>
 <label x="-175.26" y="-55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XTL" gate="G$1" pin="G2"/>
+<wire x1="-91.44" y1="205.74" x2="-99.06" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="205.74" x2="-99.06" y2="200.66" width="0.1524" layer="91"/>
+<label x="-99.06" y="200.66" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="U4.1" gate="A" pin="GND"/>
+<wire x1="180.34" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<label x="167.64" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="LASER_ILK" class="0">
@@ -10067,9 +10043,9 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="78.74" y1="177.8" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="182.88" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="C5.2" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="182.88" x2="91.44" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="182.88" x2="96.52" y2="182.88" width="0.1524" layer="91"/>
 <junction x="83.82" y="182.88"/>
-<label x="91.44" y="182.88" size="1.778" layer="95"/>
+<label x="99.06" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2.1" gate="A" pin="VCCI"/>
@@ -11018,6 +10994,37 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <pinref part="U9.2" gate="A" pin="OUTA"/>
 <pinref part="LED9.1" gate="G$1" pin="A"/>
 <wire x1="-50.8" y1="-40.64" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A_GND" class="0">
+<segment>
+<wire x1="-76.2" y1="187.96" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="205.74" x2="-76.2" y2="213.36" width="0.1524" layer="91"/>
+<junction x="-76.2" y="205.74"/>
+<label x="-76.2" y="213.36" size="1.778" layer="95" rot="R90"/>
+<pinref part="MCU" gate="A" pin="AVSS"/>
+<wire x1="-76.2" y1="187.96" x2="-60.96" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="C5.1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R4.1" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<label x="157.48" y="83.82" size="1.778" layer="95" rot="R180"/>
+<pinref part="R4.3" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="73.66" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<junction x="162.56" y="83.82"/>
+</segment>
+<segment>
+<pinref part="LASER_COM" gate="-2" pin="S"/>
+<wire x1="-246.38" y1="-106.68" x2="-226.06" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-226.06" y="-106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LASER_COM" gate="-1" pin="S"/>
+<wire x1="-246.38" y1="-109.22" x2="-226.06" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-226.06" y="-109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
