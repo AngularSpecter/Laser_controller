@@ -9191,6 +9191,7 @@ Source: www.kingbright.com</description>
 <part name="R8.1" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
 <part name="LED9.1" library="led" deviceset="LED" device="SMT1206"/>
 <part name="R9.4" library="adafruit" deviceset="R-US_" device="M1206" value="100k"/>
+<part name="C4.1" library="adafruit" deviceset="C-US" device="C1206" value="10 uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -9231,8 +9232,7 @@ Laser outputs two analog channels  relating diode current and temperature.
 Buffering stage provides level conversion and protection to the MCU</text>
 <text x="-256.54" y="-88.9" size="1.778" layer="97">Laser Connector
 ----------------------------------------
-DB25 connector sourcing power and data to laser.
-Must source/sink 10A @5V</text>
+Provides data link to laser</text>
 <text x="-101.6" y="-81.28" size="1.778" layer="97">LCD interface
 -------------------------------------------------
 LCD is interfaced through I2C port expander</text>
@@ -9417,6 +9417,10 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <instance part="R8.1" gate="G$1" x="-261.62" y="-10.16" rot="R270"/>
 <instance part="LED9.1" gate="G$1" x="-50.8" y="-50.8"/>
 <instance part="R9.4" gate="G$1" x="-55.88" y="-58.42"/>
+<instance part="C4.1" gate="G$1" x="167.64" y="91.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="164.084" y="90.805" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.624" y="88.011" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 <bus name="DB[0..7]">
@@ -9660,11 +9664,6 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <wire x1="-91.44" y1="205.74" x2="-99.06" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="205.74" x2="-99.06" y2="200.66" width="0.1524" layer="91"/>
 <label x="-99.06" y="200.66" size="1.778" layer="95" rot="R270"/>
-</segment>
-<segment>
-<pinref part="U4.1" gate="A" pin="GND"/>
-<wire x1="180.34" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<label x="167.64" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="LASER_ILK" class="0">
@@ -10076,6 +10075,11 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 <pinref part="R7.1" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="182.88" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
 <label x="223.52" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C4.1" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="154.94" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -10537,11 +10541,11 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </segment>
 <segment>
 <pinref part="U4.1" gate="A" pin="1OUT"/>
-<wire x1="180.34" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U4.1" gate="A" pin="1IN-"/>
 <wire x1="180.34" y1="99.06" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <junction x="180.34" y="101.6"/>
-<label x="170.18" y="101.6" size="1.778" layer="95" rot="R180"/>
+<label x="157.48" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="3VIO-5" class="0">
@@ -11008,13 +11012,21 @@ MCU uses TimerD facility to generate dual PWM outputs with controllable delay.  
 </segment>
 <segment>
 <pinref part="R4.1" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <label x="157.48" y="83.82" size="1.778" layer="95" rot="R180"/>
 <pinref part="R4.3" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="73.66" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="162.56" y="83.82"/>
+<pinref part="U4.1" gate="A" pin="GND"/>
+<wire x1="180.34" y1="93.98" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
+<junction x="180.34" y="83.82"/>
+<pinref part="C4.1" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="88.9" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
+<junction x="167.64" y="83.82"/>
 </segment>
 <segment>
 <pinref part="LASER_COM" gate="-2" pin="S"/>
