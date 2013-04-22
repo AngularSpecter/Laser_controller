@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -141,22 +141,22 @@
 <circle x="40.179625" y="62.83325" radius="2.129853125" width="0.254" layer="1"/>
 <circle x="40.179625" y="62.83325" radius="2.83980625" width="0.508" layer="1"/>
 <circle x="40.179625" y="62.83325" radius="3.62005625" width="0.254" layer="1"/>
-<wire x1="37.639625" y1="84.42325" x2="37.639625" y2="86.01075" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="39.227125" y2="84.42325" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="37.639625" y2="82.83575" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="36.052125" y2="84.42325" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.833425" y2="85.61705" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="36.445825" y2="85.61705" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="36.445825" y2="83.22945" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.833425" y2="83.22945" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.115925" y2="85.53455" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="37.163425" y2="85.53455" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="36.528425" y2="84.89955" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="36.528425" y2="83.94705" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="37.163425" y2="83.31195" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.115925" y2="83.31195" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.750825" y2="84.89955" width="0.254" layer="29"/>
-<wire x1="37.639625" y1="84.42325" x2="38.750825" y2="83.94705" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="40.179625" y2="64.42075" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="41.767125" y2="62.83325" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="40.179625" y2="61.24575" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="38.592125" y2="62.83325" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="41.373425" y2="64.02705" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="38.985825" y2="64.02705" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="38.985825" y2="61.63945" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="41.373425" y2="61.63945" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="40.655925" y2="63.94455" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="39.703425" y2="63.94455" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="39.068425" y2="63.30955" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="39.068425" y2="62.35705" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="39.703425" y2="61.72195" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="40.655925" y2="61.72195" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="41.290825" y2="63.30955" width="0.254" layer="29"/>
+<wire x1="40.179625" y1="62.83325" x2="41.290825" y2="62.35705" width="0.254" layer="29"/>
 <wire x1="27.6225" y1="45.323125" x2="23.495" y2="45.323125" width="0.1524" layer="122"/>
 <wire x1="28.2575" y1="50.403125" x2="21.2725" y2="50.403125" width="0.1524" layer="122"/>
 <wire x1="28.336875" y1="47.863125" x2="21.351875" y2="47.863125" width="0.1524" layer="122"/>
@@ -5128,28 +5128,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="61.722" y1="27.686" x2="62.484" y2="26.924" width="0.254" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="6,1,71b5abfb181c53d6"/>
-<approved hash="6,1,e957b8eab32a0646"/>
-<approved hash="6,1,74b070e02de029b0"/>
-<approved hash="6,1,c4a7c0fa23fa27a7"/>
-<approved hash="6,1,c42fc6f4c7db0ffb"/>
-<approved hash="6,1,842e640c69a3e27a"/>
-<approved hash="6,1,aa765f945e746375"/>
-<approved hash="6,1,ad0a2f87e81e70e1"/>
-<approved hash="6,1,5ab65e576ed76a36"/>
-<approved hash="6,1,ee16f516f5e6eee6"/>
-<approved hash="6,1,c915631786e4597f"/>
-<approved hash="6,1,baeab889f889faea"/>
-<approved hash="6,1,c11bb819c87044b5"/>
-<approved hash="6,1,4eb54a5462d46635"/>
-<approved hash="6,1,3818b079817908bb"/>
-<approved hash="6,1,c3c0f202bbdaa549"/>
-<approved hash="6,1,21169e169ee621e6"/>
-<approved hash="6,1,c92658a151440447"/>
-<approved hash="6,1,3a36257285729a36"/>
-<approved hash="6,1,3dbaeafdef19fb99"/>
-</errors>
 </board>
 </drawing>
 </eagle>
