@@ -17,10 +17,14 @@
 #include "pmm.h"
 #include "pmap.h"
 
+#include "delay.h"
+
 void main()
 {
 	  // Stop watchdog timer
 	  WDT_A_hold(WDT_A_BASE);
+
+	  delay_init();
 
 	  while(1);
 }

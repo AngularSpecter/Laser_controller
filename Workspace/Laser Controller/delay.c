@@ -12,10 +12,13 @@
 #include <stdint.h>
 
 #include "timer_d.h"
+#include "gpio.h"
 
 #include "inc/hw_memmap.h"
 
 #include "delay.h"
+
+static uint32_t delay = 0;
 
 /* delay_init()
  *
@@ -41,11 +44,13 @@ void delay_init()
 			TIMER_D_TDIE_INTERRUPT_DISABLE,
 			TIMER_D_DO_CLEAR); //configure continuous count up mode for the timer.
 
-	TIMER_D_startCounter(TIMER_D0_BASE, TIMER_D_CONTINUOUS_MODE); //start the timer.
+	//TIMER_D_startCounter(TIMER_D0_BASE, TIMER_D_CONTINUOUS_MODE); //start the timer.
 
 	TIMER_D_clearCaptureCompareInterruptFlag(TIMER_D0_BASE, TIMER_D_CAPTURECOMPARE_REGISTER_2);	//clear the interrupt before it is enabled.
 
 	/* Setup the capture mode for the TTL IN Signal. */
+	GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P3, GPIO_PIN1);//setup MCU_TTL1 as a compare output.
+
 	TIMER_D_initCapture(
 			TIMER_D0_BASE,
 			TIMER_D_CAPTURECOMPARE_REGISTER_2,
@@ -56,23 +61,25 @@ void delay_init()
 			TIMER_D_OUTPUTMODE_OUTBITVALUE,
 			TIMER_D_DUAL_CAPTURE_MODE);
 
+	/* Setup the compare mode for the TTL OUT Signal. */
+	TIMER_D_initCompare(
+			TIMER_D1_BASE,
+			TIMER_D_CAPTURECOMPARE_REGISTER_2,
+			TIMER_D_CAPTURECOMPARE_INTERRUPT_DISABLE,
+			TIMER_D_OUTPUTMODE_SET_RESET,
+			100);
+
 	/*** Configure TimerD1 for output compare mode to generate a delayed copy of TTL_IN ***/
 	TIMER_D_configureContinuousMode(
 			TIMER_D1_BASE,
-			TIMER_D_CLOCKSOURCE_SMCLK,
+			TIMER_D_CLOCKSOURCE_EXTERNAL_TDCLK,
 			TIMER_D_CLOCKSOURCE_DIVIDER_1,
 			TIMER_D_CLOCKINGMODE_EXTERNAL_CLOCK,
 			TIMER_D_TDIE_INTERRUPT_DISABLE,
 			TIMER_D_DO_CLEAR);
 
+	//TIMER_D_configureUpMode(TIMER_D1_BASE, TIMER_D_CLOCKSOURCE_ACLK)
 	TIMER_D_startCounter(TIMER_D1_BASE, TIMER_D_CONTINUOUS_MODE);	//start the timer.
-
-	/* Setup the compare mode for the TTL OUT Signal. */
-	TIMER_D_initCompare(TIMER_D1_BASE,
-			TIMER_D_CAPTURECOMPARE_REGISTER_1,
-			TIMER_D_CAPTURECOMPARE_INTERRUPT_DISABLE,
-			TIMER_D_OUTPUTMODE_SET_RESET,
-			0);
 
 }
 
