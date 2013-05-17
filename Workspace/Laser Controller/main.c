@@ -18,12 +18,31 @@
 #include "pmap.h"
 
 #include "delay.h"
+#include "signalmux.h"
+#include "hardware.h"
 
 void main()
 {
 	  // Stop watchdog timer
 	  WDT_A_hold(WDT_A_BASE);
 
+	  /* Setup the clock subsystem. */
+	  UCS_setExternalClockSource(UCS_BASE, XTAL_FREQUENCY, 0);
+
+	  GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_PJ, GPIO_PIN4);	//setup the crystal output pin
+	  GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_PJ, GPIO_PIN5);
+
+	  UCS_HFXT1Start(UCS_BASE, UCS_XT1_DRIVE0);								//start the oscillator.
+
+	  UCS_clockSignalInit(UCS_BASE, UCS_MCLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the master clock
+	  UCS_clockSignalInit(UCS_BASE, UCS_ACLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the alternate clock
+
+	  /* Setup signal routing. */
+	  //signalmux_init();
+	  //signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_OFF);
+	  //signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_OFF);
+
+	  /* Setup the delay subsystem. */
 	  delay_init();
 
 	  while(1);
