@@ -5,8 +5,8 @@
  *      Author: Collin
  */
 
-
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 
 #include "inc/hw_memmap.h"
@@ -20,31 +20,40 @@
 #include "delay.h"
 #include "signalmux.h"
 #include "hardware.h"
+#include "buffer.h"
 
 void main()
 {
-	  // Stop watchdog timer
-	  WDT_A_hold(WDT_A_BASE);
+	volatile uint32_t i = 0;
 
-	  /* Setup the clock subsystem. */
-	  UCS_setExternalClockSource(UCS_BASE, XTAL_FREQUENCY, 0);
+	// Stop watchdog timer
+	WDT_A_hold(WDT_A_BASE);
 
-	  GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_PJ, GPIO_PIN4);	//setup the crystal output pin
-	  GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_PJ, GPIO_PIN5);
+	/* Setup the clock subsystem. */
+	UCS_setExternalClockSource(UCS_BASE, XTAL_FREQUENCY, 0);
 
-	  UCS_HFXT1Start(UCS_BASE, UCS_XT1_DRIVE0);								//start the oscillator.
+	GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_PJ, GPIO_PIN4); 	//setup the crystal output pin
+	GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_PJ, GPIO_PIN5);
 
-	  UCS_clockSignalInit(UCS_BASE, UCS_MCLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the master clock
-	  UCS_clockSignalInit(UCS_BASE, UCS_ACLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the alternate clock
+	UCS_HFXT1Start(UCS_BASE, UCS_XT1_DRIVE0);								//start the oscillator.
 
-	  /* Setup signal routing. */
-	  //signalmux_init();
-	  //signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_OFF);
-	  //signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_OFF);
+	UCS_clockSignalInit(UCS_BASE, UCS_MCLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the master clock
+	UCS_clockSignalInit(UCS_BASE, UCS_ACLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the alternate clock
+	UCS_clockSignalInit(UCS_BASE, UCS_SMCLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);	//setup the alternate clock
 
-	  /* Setup the delay subsystem. */
-	  delay_init();
+	/* Setup signal routing. */
+	signalmux_init();
+	signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_OFF);
+	signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_OFF);
 
-	  while(1);
+	/* Setup the delay subsystem. */
+	delay_init();
+
+	__enable_interrupt();
+
+	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN0);
+	while (1)
+	{
+	}
 }
 
