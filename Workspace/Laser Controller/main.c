@@ -21,10 +21,12 @@
 #include "signalmux.h"
 #include "hardware.h"
 #include "buffer.h"
+#include "tca6416A.h"
+#include "laser.h"
 
 void main()
 {
-	volatile uint32_t i = 0;
+	volatile uint16_t i = 0;
 
 	// Stop watchdog timer
 	WDT_A_hold(WDT_A_BASE);
@@ -49,11 +51,25 @@ void main()
 	/* Setup the delay subsystem. */
 	delay_init();
 
+	/* Setup the I/O expander. */
+	ioexp_init(ADDRESS_H);
+
+	/* Setup the laser subsystem. */
+	laser_init();
+
 	__enable_interrupt();
 
+	i = laser_getValue(LaserTemperature);
+	i = laser_getValue(LaserCurrent);
+
 	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN0);
+
+	ioexp_setIO(ADDRESS_H, 0x00);
+
 	while (1)
 	{
+		ioexp_setOutput(ADDRESS_H, i);
+		i ^= 0xFFFF;
 	}
 }
 

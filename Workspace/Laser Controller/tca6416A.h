@@ -27,8 +27,8 @@
 #define TCA6416A_H_
 
 /* Define the possible addresses of the module. */
-#define ADDRRESS_L 	0x20	//ADDR pin is low
-#define ADDRRESS_H 	0x21	//ADDR pin is high
+#define ADDRESS_L 	0x20	//ADDR pin is low
+#define ADDRESS_H 	0x21	//ADDR pin is high
 
 #define IOEXP_BIT0	0x0001
 #define IOEXP_BIT1	0x0002
@@ -51,7 +51,7 @@
 
 void ioexp_init(uint8_t address);
 void ioexp_setIO(uint8_t address, uint16_t iomap);
-
+void ioexp_setOutput(uint8_t address, uint16_t output);
 
 
 #endif /* TCA6416A_H_ */
