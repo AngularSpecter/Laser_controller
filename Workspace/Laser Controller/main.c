@@ -23,10 +23,13 @@
 #include "buffer.h"
 #include "tca6416A.h"
 #include "laser.h"
+#include "laser_uart.h"
 
 void main()
 {
 	volatile uint16_t i = 0;
+	char test[] = "ABCDEFGH";
+	char test2[10];
 
 	// Stop watchdog timer
 	WDT_A_hold(WDT_A_BASE);
@@ -57,18 +60,25 @@ void main()
 	/* Setup the laser subsystem. */
 	laser_init();
 
+	/* Setup the UART. */
+	uart_init();
+
 	__enable_interrupt();
 
-	i = laser_getValue(LaserTemperature);
-	i = laser_getValue(LaserCurrent);
+	//i = laser_getValue(LaserTemperature);
+	//i = laser_getValue(LaserCurrent);
 
 	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN0);
 
-	ioexp_setIO(ADDRESS_H, 0x00);
+	//ioexp_setIO(ADDRESS_H, 0x00);
+
+	/* DEBUG. */
+	uart_puts(test, sizeof(test));
 
 	while (1)
 	{
-		ioexp_setOutput(ADDRESS_H, i);
+		//ioexp_setOutput(ADDRESS_H, i);
+		uart_gets(test2, sizeof(test2));
 		i ^= 0xFFFF;
 	}
 }
