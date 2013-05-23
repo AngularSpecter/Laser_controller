@@ -24,6 +24,7 @@
 #include "tca6416A.h"
 #include "laser.h"
 #include "laser_uart.h"
+#include "lcd.h"
 
 void main()
 {
@@ -55,13 +56,14 @@ void main()
 	delay_init();
 
 	/* Setup the I/O expander. */
-	ioexp_init(ADDRESS_H);
+	//ioexp_init(ADDRESS_H);
+	lcd_init();
 
 	/* Setup the laser subsystem. */
 	laser_init();
 
 	/* Setup the UART. */
-	uart_init();
+	//uart_init();
 
 	__enable_interrupt();
 

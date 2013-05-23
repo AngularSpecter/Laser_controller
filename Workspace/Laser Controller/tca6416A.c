@@ -153,8 +153,8 @@ void ioexp_setIO(uint8_t address, uint16_t iomap)
  *
  * Arguments:
  * address:	The address of the I/O Expander chip:
- * 		-ADDRRESS_H
- * 		-ADDRRESS_L
+ * 		-ADDRESS_H
+ * 		-ADDRESS_L
  * output: 	The bits to set the I/O Expander output port too.
  *
  * Returns:
