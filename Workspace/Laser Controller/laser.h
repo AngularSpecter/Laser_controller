@@ -27,4 +27,7 @@ typedef enum
 	LaserInterlock
 }LaserInputParameter;
 
+void laser_init();
+uint16_t laser_getValue(LaserInputParameter valueType);
+
 #endif /* LASER_H_ */

@@ -86,6 +86,16 @@ void ioexp_init(uint8_t address)
 	buf_index = 0;
 	msg_len = 0;
 
+
+	/* Reset the IO Expander module. */
+	GPIO_setAsOutputPin(GPIO_PORT_PJ, GPIO_PIN0);
+	GPIO_setOutputLowOnPin(GPIO_PORT_PJ, GPIO_PIN0);//bring into reset.
+
+	__delay_cycles(10000);//wait for the chip to reset.
+
+	/* Enable the I/O Expander. */
+	GPIO_setOutputHighOnPin(GPIO_PORT_PJ, GPIO_PIN0);
+
 	/* Setup the I2C interface. */
 	GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P1, (GPIO_PIN4 | GPIO_PIN5));
 
@@ -110,6 +120,8 @@ void ioexp_init(uint8_t address)
 	//Enable transmit Interrupt
 	USCI_B_I2C_clearInterruptFlag(USCI_B0_BASE, USCI_B_I2C_TRANSMIT_INTERRUPT);
 	USCI_B_I2C_enableInterrupt(USCI_B0_BASE, USCI_B_I2C_TRANSMIT_INTERRUPT);
+
+
 }
 
 /* ioexp_setIO()
@@ -184,8 +196,6 @@ void ioexp_setOutput(uint8_t address, uint16_t output)
 #pragma vector = USCI_B0_VECTOR
 __interrupt void USCI_B0_ISR(void)
 {
-	uint8_t word = 0;
-
 	switch (__even_in_range(UCB0IV, 12))
 	{
 		case USCI_I2C_UCTXIFG: //Vector 12: Transmit buffer empty - TXIF
