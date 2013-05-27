@@ -103,7 +103,7 @@ void delay_init()
  */
 void delay_setDelay(uint16_t new_delay)
 {
-	if (new_delay > MAX_DELAY_PERIOD)
+	if (new_delay < MAX_DELAY_PERIOD)
 	{
 		next_delay = new_delay;	//queue up the next delay value.
 	}
@@ -143,7 +143,7 @@ uint16_t delay_getDelay()
  */
 void delay_setPulseWidth(uint16_t new_width)
 {
-	if (new_width > MAX_DELAY_PERIOD)
+	if (new_width < MAX_WIDTH)
 	{
 		next_width = new_width;	//queue up the next delay value.
 	}
