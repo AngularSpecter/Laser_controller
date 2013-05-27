@@ -17,7 +17,7 @@
 #ifndef TICK_H_
 #define TICK_H_
 
-typedef uint32_t tick_t;
+typedef uint64_t tick_t;
 
 #define MILLISECOND 	1
 #define SECOND 			(1000 * MILLISECOND)

@@ -104,8 +104,6 @@ void _lcd_character(char data)
 	port = port | ENABLE ;
 	LCD_IO(port);
 
-	//_lcd_delay(2);//satisfy setup & hold time
-
 	/* Set ENABLE low to latch the command. */
 	port = port & ~ENABLE;
 	LCD_IO(port);

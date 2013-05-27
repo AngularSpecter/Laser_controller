@@ -17,19 +17,58 @@
 #include "pmm.h"
 #include "pmap.h"
 
+#include "application.h"
 #include "delay.h"
 #include "signalmux.h"
 #include "hardware.h"
 #include "buffer.h"
 #include "tca6416A.h"
+#include "tick.h"
 #include "laser.h"
 #include "laser_uart.h"
 #include "lcd.h"
-#include "application.h"
+
+/* _update_lcd()
+ *
+ * Updates the LCD with front panel UI info.
+ *
+ * Arguments:
+ * NONE
+ *
+ * Returns:
+ * NONE
+ *
+ */
+void _update_lcd()
+{
+	char str[32];
+	uint16_t len = 0;
+
+	/* Initialize. */
+	memset(str, 0, sizeof(str));
+
+	/* Interleave all of the string concatenations, etc... with LCD writes to maximize hardware usage. */
+	lcd_setCursor(CURSOR_LINE1);
+	len = sprintf(str, "Laser Temp: %d    ", laser_getValue(LaserTemperature));
+	lcd_puts(str, len);
+
+	lcd_setCursor(CURSOR_LINE2);
+	len = sprintf(str, "Laser Current: %d    ", laser_getValue(LaserCurrent));
+	lcd_puts(str, len);
+
+	lcd_setCursor(CURSOR_LINE3);
+	len = sprintf(str, "Delay=%d us", delay_getDelay());
+	lcd_puts(str, len);
+
+	lcd_setCursor(CURSOR_LINE4);
+	len = sprintf(str, "Duration=%d us", delay_getPulseWidth());
+	lcd_puts(str, len);
+}
 
 void main()
 {
 	volatile uint16_t i = 0;
+	tick_t lcd_timer = 0;
 
 	// Stop watchdog timer
 	WDT_A_hold(WDT_A_BASE);
@@ -47,6 +86,9 @@ void main()
 	UCS_clockSignalInit(UCS_BASE, UCS_SMCLK, UCS_XT1CLK_SELECT, UCS_CLOCK_DIVIDER_1);//setup the alternate clock
 
 	__enable_interrupt();
+
+	/* Setup the time keeping subsystem. */
+	tick_init();
 
 	/* Setup signal routing. */
 	signalmux_init();
@@ -66,12 +108,15 @@ void main()
 	uart_init();
 
 	/* DEBUG. */
-	_uart_debugRX(":current;", 19);//set up a debug command.
+	_uart_debugRX(":current;", 9);								//set up a debug command.
 
 	while (1)
 	{
 		/* Process any incoming commands. */
 		application_processCommandsTask();
+
+		i = TIMER_A_getCounterValue(TIMER_A0_BASE);
+		tick_executeAfter(lcd_timer, 500 * MILLISECOND, _update_lcd());
 	}
 }
 
