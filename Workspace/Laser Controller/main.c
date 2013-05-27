@@ -66,7 +66,7 @@ void main()
 	uart_init();
 
 	/* DEBUG. */
-	_uart_debugRX(":delay=2534;", 12);//set up a debug command.
+	_uart_debugRX(":current;", 19);//set up a debug command.
 
 	while (1)
 	{

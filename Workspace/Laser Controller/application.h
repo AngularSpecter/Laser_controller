@@ -16,16 +16,15 @@
 #define APPLICATION_H_
 
 #define CMD_DATAMASK 	0x0000FFFF
-#define NAK 			0x80000000//commands only use the bottom 16 bits of the return value for actual data, use the upper bits to return success/failure.
-#define ACK				0x00000000
-#define NO_PARAMETER 	0x40000000
+#define NAK 			0x80000000	//commands only use the bottom 16 bits of the return value for actual data, use the upper bits to return success/failure.
+#define NO_OUTPUT	 	0x40000000
 
 #define CMD_START_DELIMITER	':'
 #define CMD_END_DELIMITER	';'
 #define CMD_PARAM_DELIMITER '='
 
 /* Define the commands and the command jump table with X-Macros. */
-typedef uint32_t (*cmdHandlerFunc)(uint32_t parameter);
+typedef uint32_t (*cmdHandlerFunc)(char* parameter);
 
 /* Define all of the commands in this table. The following X-Macros will create all of the required structures.
  *
@@ -43,7 +42,8 @@ typedef uint32_t (*cmdHandlerFunc)(uint32_t parameter);
 		TABLE_ENTRY(laserCurrent, "current") 	\
 		TABLE_ENTRY(laserTemp, "temp") 			\
 		TABLE_ENTRY(laserInterlock, "interlock")\
-		TABLE_ENTRY(laserTriggerDelay, "delay")	\
+		TABLE_ENTRY(laserTriggerDelay, "triggerDelay")	\
+		TABLE_ENTRY(laserTriggerWidth, "triggerWidth")	\
 		TABLE_ENTRY(reserved, NULL)
 
 /* Define the number of commands. */
@@ -57,7 +57,7 @@ typedef struct
 
 
 /* Define the command handler prototypes. */
-#define CMD_HANDLER_PROTO(x, y)	uint32_t x##_handler(uint32_t parameter);
+#define CMD_HANDLER_PROTO(x, y)	uint32_t x##_handler(char* parameter);
 COMMAND_TABLE(CMD_HANDLER_PROTO)
 
 #ifdef APPLICATION
