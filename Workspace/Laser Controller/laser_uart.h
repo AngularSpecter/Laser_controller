@@ -19,5 +19,6 @@
 void uart_init();
 uint8_t uart_puts(char* str, uint8_t len);
 uint8_t uart_gets(char* str, uint8_t max_len);
+uint8_t uart_peeks(char* str, uint8_t max_len);
 
 #endif /* UART_H_ */

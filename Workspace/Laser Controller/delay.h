@@ -16,6 +16,8 @@
 
 void delay_init();
 void delay_setDelay(uint16_t new_delay);
+uint16_t delay_getDelay();
 void delay_setPulseWidth(uint16_t new_width);
+uint16_t delay_getPulseWidth();
 
 #endif /* DELAY_H_ */

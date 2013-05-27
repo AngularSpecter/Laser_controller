@@ -118,6 +118,7 @@ uint8_t uart_puts(char* str, uint8_t len)
 	return len_written;
 }
 
+
 /* uart_gets()
  *
  * Retrieve characters already received on the UART.
@@ -135,6 +136,36 @@ uint8_t uart_gets(char* str, uint8_t max_len)
 	/* Pull data from the RX buffer and return it to the user. */
 	return buffer_read(&rx_buffer, str, max_len);
 }
+
+/* uart_peeks()
+ *
+ * Peek at characters already received on the UART. Does not remove them from
+ * input stream as uart_gets will.
+ *
+ * Arguments:
+ * str:		The string to copy data into.
+ * max_len:	The number of maximum bytes to read into the buffer.
+ *
+ * Returns:
+ * The total number of characters actually read.
+ *
+ */
+uint8_t uart_peeks(char* str, uint8_t max_len)
+{
+	return buffer_peek(&rx_buffer, str, max_len);
+}
+
+
+uint8_t _uart_debugRX(char* str, uint8_t len)
+{
+	uint8_t len_written = 0;
+
+	/* Write the new data to the buffer. */
+	len_written = buffer_write(&rx_buffer, str, len);
+
+	return len_written;
+}
+
 
 #pragma vector=USCI_A0_VECTOR
 __interrupt void USCI_A0_ISR(void)

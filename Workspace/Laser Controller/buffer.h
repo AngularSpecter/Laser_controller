@@ -12,7 +12,7 @@
 #ifndef BUFFER_H_
 #define BUFFER_H_
 
-#define BUFFER_LEN 16
+#define BUFFER_LEN 32
 
 typedef struct
 {
@@ -25,6 +25,6 @@ typedef struct
 void buffer_init(circular_buffer* buf);
 uint8_t buffer_write(circular_buffer* buf, char* data, uint8_t len);
 uint8_t buffer_read(circular_buffer* buf, char* data, uint8_t len);
-
+uint8_t buffer_peek(circular_buffer* buf, char* data, uint8_t len);
 
 #endif /* BUFFER_H_ */

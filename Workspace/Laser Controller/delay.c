@@ -18,7 +18,6 @@
 
 #include "delay.h"
 
-
 #define MAX_WIDTH			5000
 #define MAX_DELAY_PERIOD	(0xFFFF - MAX_WIDTH)
 
@@ -114,6 +113,23 @@ void delay_setDelay(uint16_t new_delay)
 	}
 }
 
+/* delay_getDelay()
+ *
+ * Get the delay set-point for the delay chain.
+ *
+ * Arguments:
+ * NONE
+ *
+ * Returns:
+ * The delay set-point.
+ *
+ */
+uint16_t delay_getDelay()
+{
+	//return the next delay, since all following pulses will use it and not the current delay.
+	return next_delay;
+}
+
 /* delay_setPulseWidth()
  *
  * Change the width of the output pulse.
@@ -128,13 +144,30 @@ void delay_setDelay(uint16_t new_delay)
 void delay_setPulseWidth(uint16_t new_width)
 {
 	if (new_width > MAX_DELAY_PERIOD)
-		{
-			next_width = new_width;	//queue up the next delay value.
-		}
-		else
-		{
-			next_width = MAX_WIDTH;
-		}
+	{
+		next_width = new_width;	//queue up the next delay value.
+	}
+	else
+	{
+		next_width = MAX_WIDTH;
+	}
+}
+
+/* delay_getPulseWidth()
+ *
+ * Get the width set-point of the output pulse.
+ *
+ * Arguments:
+ * NONE
+ *
+ * Returns:
+ * The current pulse-width set-point.
+ *
+ */
+uint16_t delay_getPulseWidth()
+{
+	//return the next width, since all following pulses will use it and not the current width.
+	return next_width;
 }
 
 #pragma vector = TIMER1_D1_VECTOR
@@ -168,27 +201,26 @@ __interrupt void TIMER0_D1_ISR(void)
 
 				/* Setup the output timer to create a PWM of a fixed width, delayed by the requested amount. */
 				TIMER_D_configureUpMode(
-							TIMER_D1_BASE,
-							TIMER_D_CLOCKSOURCE_ACLK,
-							TIMER_D_CLOCKSOURCE_DIVIDER_1,
-							TIMER_D_CLOCKINGMODE_EXTERNAL_CLOCK,
-							(delay + width),
-							TIMER_D_TDIE_INTERRUPT_ENABLE,
-							TIMER_D_CCIE_CCR0_INTERRUPT_DISABLE,
-							TIMER_D_DO_CLEAR);
+						TIMER_D1_BASE,
+						TIMER_D_CLOCKSOURCE_ACLK,
+						TIMER_D_CLOCKSOURCE_DIVIDER_1,
+						TIMER_D_CLOCKINGMODE_EXTERNAL_CLOCK,
+						(delay + width),
+						TIMER_D_TDIE_INTERRUPT_ENABLE,
+						TIMER_D_CCIE_CCR0_INTERRUPT_DISABLE,
+						TIMER_D_DO_CLEAR);
 
 				TIMER_D_initCompare(
-							TIMER_D1_BASE,
-							TIMER_D_CAPTURECOMPARE_REGISTER_2,
-							TIMER_D_CAPTURECOMPARE_INTERRUPT_DISABLE,
-							TIMER_D_OUTPUTMODE_SET_RESET,
-							delay);
+						TIMER_D1_BASE,
+						TIMER_D_CAPTURECOMPARE_REGISTER_2,
+						TIMER_D_CAPTURECOMPARE_INTERRUPT_DISABLE,
+						TIMER_D_OUTPUTMODE_SET_RESET,
+						delay);
 
 				state = delay_triggered; //The delay has now been triggered, move to the triggered state.
 
-				TIMER_D_startCounter(TIMER_D1_BASE, TIMER_D_UP_MODE);//start the delay period.
+				TIMER_D_startCounter(TIMER_D1_BASE, TIMER_D_UP_MODE); //start the delay period.
 				break;
-
 
 			default:
 				break;

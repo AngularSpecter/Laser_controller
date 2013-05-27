@@ -114,11 +114,11 @@ uint8_t buffer_write(circular_buffer* buf, char* data, uint8_t len)
  *
  * Arguments:
  * buf:		The buffer to read data from.
- * data:	A pointer to the write the data too.
+ * data:	A pointer to the copy the data to.
  * len:		The number of bytes to read from the buffer into the data pointer.
  *
  * Returns:
- * The total number of bytes actually read.
+ * The total number of bytes actually copied.
  *
  */
 uint8_t buffer_read(circular_buffer* buf, char* data, uint8_t len)
@@ -143,6 +143,50 @@ uint8_t buffer_read(circular_buffer* buf, char* data, uint8_t len)
 		if (buf->rx_index >= (2 * BUFFER_LEN))
 		{
 			buf->rx_index = 0;
+		}
+	}
+
+	return k;
+}
+
+/* buffer_peek()
+ *
+ * Reads data from a buffer, but do not remove it from the buffer.
+ *
+ * Arguments:
+ * buf:		The buffer to read data from.
+ * data:	A pointer to the copy the data to.
+ * len:		The maximum number of bytes to read from the buffer into the data pointer.
+ *
+ * Returns:
+ * The total number of bytes actually copied.
+ *
+ */
+uint8_t buffer_peek(circular_buffer* buf, char* data, uint8_t len)
+{
+	uint8_t k = 0;
+	uint8_t peek_index = 0;
+
+	/* Read data until the buffer is full or data runs out. */
+	k = 0;
+	peek_index = buf->rx_index;
+
+	for (k = 0; k < len; k++)
+	{
+		/* If the buffer is empty, return the total number of characters read to this point. */
+		if (peek_index == buf->tx_index)
+		{
+			return k;
+		}
+
+		/* Read the data. */
+		data[k] = buf->buffer[peek_index & (BUFFER_LEN - 1)]; //only use the lower part of the index.
+
+		/* Increment the rx_index, wrap it once it reaches (2 * BUFFER_LEN - 1). */
+		peek_index++;
+		if (peek_index >= (2 * BUFFER_LEN))
+		{
+			peek_index = 0;
 		}
 	}
 

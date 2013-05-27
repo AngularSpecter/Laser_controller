@@ -25,12 +25,12 @@
 #include "laser.h"
 #include "laser_uart.h"
 #include "lcd.h"
+#include "application.h"
 
 void main()
 {
 	volatile uint16_t i = 0;
-	char test[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789";
-	//char test2[10];
+
 	// Stop watchdog timer
 	WDT_A_hold(WDT_A_BASE);
 
@@ -64,13 +64,14 @@ void main()
 
 	/* Setup the UART. */
 	uart_init();
-	//i = laser_getValue(LaserTemperature);
-	//i = laser_getValue(LaserCurrent);
 
+	/* DEBUG. */
+	_uart_debugRX(":delay=2534;", 12);//set up a debug command.
 
 	while (1)
 	{
-		i ^= 0xFFFF;
+		/* Process any incoming commands. */
+		application_processCommandsTask();
 	}
 }
 
