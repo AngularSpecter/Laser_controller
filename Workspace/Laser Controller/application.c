@@ -173,6 +173,70 @@ uint32_t laserTriggerWidth_handler(char* parameter)
 	return 0;
 }
 
+uint32_t laserTriggerEnable_handler(char* parameter)
+{
+	uint32_t param = 0;
+
+	/* Enable or disable the delay trigger. */
+	if (parameter != NULL)
+	{
+		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
+		delay_setEnable(param);
+	}
+
+	param = delay_isEnabled();
+	sprintf(parameter, "%d", param);
+	return 0;
+}
+
+uint32_t lasertriggerMode_handler(char* parameter)
+{
+	/* Setup trigger signal chain. */
+	uint32_t param = 0;
+
+	if (parameter != NULL)
+	{
+		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
+
+		/* Reconfigure the delay trigger based on the parameter. */
+		switch (param)
+		{
+			/* External Delay. */
+			case DELAYED_TRIGGER:
+				delay_init(DELAYED_TRIGGER);
+				break;
+
+				/* Internally Generated. */
+			case GENERATED_TRIGGER:
+				delay_init(GENERATED_TRIGGER);
+				break;
+
+			default:
+				return NAK; //invalid parameter
+		}
+	}
+
+	param = delay_getMode();
+	sprintf(parameter, "%d", param);
+	return 0;
+}
+
+uint32_t lasertriggerPeriod_handler(char* parameter)
+{
+	uint32_t param = 0;
+
+	/* Set the new laser trigger output pulse width. */
+	if (parameter != NULL)
+	{
+		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
+		delay_setPeriod(param);
+	}
+
+	param = delay_getPeriod();
+	sprintf(parameter, "%d", param); //return the current or newly set trigger output width.
+	return 0;
+}
+
 /* application_processCommandsTask()
  *
  * Processes received commands and calls the appropriate command handler.

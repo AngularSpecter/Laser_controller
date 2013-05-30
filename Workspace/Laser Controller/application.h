@@ -44,6 +44,9 @@ typedef uint32_t (*cmdHandlerFunc)(char* parameter);
 		TABLE_ENTRY(laserInterlock, "interlock")\
 		TABLE_ENTRY(laserTriggerDelay, "triggerDelay")	\
 		TABLE_ENTRY(laserTriggerWidth, "triggerWidth")	\
+		TABLE_ENTRY(laserTriggerEnable, "triggerEnable") \
+		TABLE_ENTRY(lasertriggerMode, "triggerMode") \
+		TABLE_ENTRY(lasertriggerPeriod, "triggerPeriod") \
 		TABLE_ENTRY(reserved, NULL)
 
 /* Define the number of commands. */

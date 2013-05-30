@@ -90,13 +90,8 @@ void main()
 	/* Setup the time keeping subsystem. */
 	tick_init();
 
-	/* Setup signal routing. */
-	signalmux_init();
-	signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_OFF);
-	signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_OFF);
-
 	/* Setup the delay subsystem. */
-	delay_init();
+	delay_init(GENERATED_TRIGGER);
 
 	/* Setup the I/O expander. */
 	lcd_init();
@@ -108,7 +103,7 @@ void main()
 	uart_init();
 
 	/* DEBUG. */
-	_uart_debugRX(":current;", 9);								//set up a debug command.
+	_uart_debugRX(":current;", 9);		//set up a debug command.
 
 	while (1)
 	{
