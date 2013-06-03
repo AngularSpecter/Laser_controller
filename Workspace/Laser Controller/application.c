@@ -135,7 +135,7 @@ uint32_t laserTriggerDelay_handler(char* parameter)
 	uint32_t param = 0;
 
 	/* Set the new laser trigger delay. */
-	if (parameter != NULL)
+	if (strlen(parameter) != 0)
 	{
 		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
 		delay_setDelay(param);
@@ -162,7 +162,7 @@ uint32_t laserTriggerWidth_handler(char* parameter)
 	uint32_t param = 0;
 
 	/* Set the new laser trigger output pulse width. */
-	if (parameter != NULL)
+	if (strlen(parameter) != 0)
 	{
 		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
 		delay_setPulseWidth(param);
@@ -178,7 +178,7 @@ uint32_t laserTriggerEnable_handler(char* parameter)
 	uint32_t param = 0;
 
 	/* Enable or disable the delay trigger. */
-	if (parameter != NULL)
+	if (strlen(parameter) != 0)
 	{
 		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
 		delay_setEnable(param);
@@ -194,7 +194,7 @@ uint32_t lasertriggerMode_handler(char* parameter)
 	/* Setup trigger signal chain. */
 	uint32_t param = 0;
 
-	if (parameter != NULL)
+	if (strlen(parameter) != 0)
 	{
 		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
 
@@ -226,7 +226,7 @@ uint32_t lasertriggerPeriod_handler(char* parameter)
 	uint32_t param = 0;
 
 	/* Set the new laser trigger output pulse width. */
-	if (parameter != NULL)
+	if (strlen(parameter) != 0)
 	{
 		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
 		delay_setPeriod(param);

@@ -45,6 +45,7 @@ typedef enum
 } DELAY_STATE;
 
 static DELAY_STATE state = delay_idle;
+static DELAY_STATE lastEnabledState = delay_idle;
 
 /* _delay_setupGeneratedTrigger()
  *
@@ -103,13 +104,13 @@ void delay_init(uint8_t mode)
 	TIMER_D_stop(TIMER_D0_BASE);
 	TIMER_D_stop(TIMER_D1_BASE);
 
+	/* Setup signal routing. */
+	signalmux_init();
+	signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
+	signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_DELAYED_TRIGGER_MCU_OUTPUT);
+
 	if (mode == DELAYED_TRIGGER)
 	{
-		/* Setup signal routing. */
-		signalmux_init();
-		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
-		signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_DELAYED_TRIGGER_MCU_OUTPUT);
-
 		/* Setup the state machine. */
 		state = delay_idle;
 
@@ -153,6 +154,8 @@ void delay_init(uint8_t mode)
 		period = DEFAULT_PERIOD;
 		_delay_setupGeneratedTrigger();
 	}
+
+	lastEnabledState = state;
 }
 
 /* delay_setDelay()
@@ -300,10 +303,19 @@ void delay_setEnable(uint8_t enable)
 {
 	if (enable)
 	{
-		state = delay_idle;
+		/* Re-enable the proper state. */
+		if (lastEnabledState == delay_generator)
+		{
+			state = delay_generator;
+		}
+		else
+		{
+			state = delay_idle;
+		}
 	}
 	else
 	{
+		lastEnabledState = state;	//save the current state.
 		state = delay_disabled;
 
 		/* Stop all of the timers, in case they were started by a previous call. */

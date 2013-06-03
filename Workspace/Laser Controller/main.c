@@ -69,6 +69,7 @@ void main()
 {
 	volatile uint16_t i = 0;
 	tick_t lcd_timer = 0;
+	char cmd[] = ":triggerPeriod=200;";
 
 	// Stop watchdog timer
 	WDT_A_hold(WDT_A_BASE);
@@ -103,7 +104,7 @@ void main()
 	uart_init();
 
 	/* DEBUG. */
-	_uart_debugRX(":current;", 9);		//set up a debug command.
+	_uart_debugRX(cmd, sizeof(cmd));		//set up a debug command.
 
 	while (1)
 	{

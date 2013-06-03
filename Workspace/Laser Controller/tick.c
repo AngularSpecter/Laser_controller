@@ -93,6 +93,7 @@ __interrupt void TA0_ISR(void)
 			break;                          //CCR6 not used
 		case 14:
 			tick++;
+			TIMER_A_clearCaptureCompareInterruptFlag(TIMER_A0_BASE, TIMER_A_CAPTURECOMPARE_REGISTER_0);
 			break;
 		default:
 			break;
