@@ -128,8 +128,107 @@ uint16_t laser_getValue(LaserInputParameter valueType)
 		case LaserInterlock:
 			return (uint16_t)GPIO_getInputPinValue(GPIO_PORT_P2, GPIO_PIN3);
 
+		case InterlockOverride:
+			return (uint16_t) (P2DIR & GPIO_PIN3) > 0;  // P2DIR & GPIO_PIN3 == 1 = output = override on
+
 		default:
 			return 0;
 	}
 }
 
+
+/* void laser_setOverride
+ *
+ * Turns the interlock monitoring pin on the mcu into a GPIO output
+ * to override the hardware interlock.  Pulling the interlock pin
+ * low disables the laser while holding it high enables it.
+ *
+ * This action is independent of laser triggering, which can be used
+ * as well to disable the laser.
+ */
+
+void laser_setOverride(uint8_t state)
+{
+	/* if state == enable and currently disabled
+	 * switch pin to output and configure to match
+	 * old state of interlock                       */
+    if ( state & ~laser_getValue(InterlockOverride) )
+    {
+    	char old_val = laser_getValue(LaserInterlock);
+    	P2DIR |= GPIO_PIN3;
+
+    	/*Set pin value to match current setting*/
+    	if (old_val)
+    	{
+    		P2DIR |= GPIO_PIN3;
+    	}
+    	else
+    	{
+    	   P2DIR &= ~GPIO_PIN3;
+    	}
+
+    }
+    /* if state = disable and currently enabled
+     * reset pin to input state                        */
+    else if (~state & laser_getValue(InterlockOverride) )
+    {
+    	P2DIR &= ~GPIO_PIN3;
+    }
+}
+
+/* void laser_setInterlock
+ *
+ * Function to change the value of the interlock if
+ * InterlockOverride is enabled.
+ */
+void laser_setInterlock(uint8_t state)
+{
+	/*only set the value if in override mode*/
+	if (laser_getValue(InterlockOverride) )
+	{
+		if (state)
+		{
+			P2OUT |= GPIO_PIN3;
+		}
+		else
+		{
+		    P2OUT &= ~GPIO_PIN3;
+		}
+	}
+
+
+}
+
+uint16_t ticks2temp(uint16_t ticks, Units outputUnits)
+{
+	switch (outputUnits)
+	{
+	/* mV */
+	case mV:
+		return (uint16_t)((uint32_t)ticks * 244 / 100);
+
+	/*tenths of a Degree Celsius*/
+	case Celsius:
+	    return (uint16_t)( (240000 - (uint32_t)ticks*244 ) / 35 / 10);
+
+	/*tenths of a Degree Fahrenheit */
+	case Fahrenheit:
+		return (uint16_t)( (240000 - (uint32_t)ticks*244 ) / 35 / 10 * 18 + 320);
+
+	default:
+		return (uint16_t)ticks;
+	}
+}
+
+uint16_t ticks2current(uint16_t ticks, Units outputUnits)
+{
+	switch (outputUnits)
+	{
+	/* mV */
+	case mV:
+		return (uint16_t)((uint32_t)ticks * 244 / 100);
+
+	default:
+		return (uint16_t)ticks;
+	}
+}

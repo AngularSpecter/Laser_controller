@@ -32,8 +32,8 @@ void signalmux_init()
 	/* Setup GPIO's */
 	GPIO_setAsOutputPin(GPIO_PORT_P2, LASER_SOURCE_A_PIN); //Laser source A
 	GPIO_setAsOutputPin(GPIO_PORT_P2, LASER_SOURCE_B_PIN); //Laser source B
-	GPIO_setAsOutputPin(GPIO_PORT_P2, DELAYED_TRIGGER_SOURCE_A_PIN); //Delayed Trigger source A
-	GPIO_setAsOutputPin(GPIO_PORT_P2, DELAYED_TRIGGER_SOURCE_B_PIN); //Delayed Trigger source B
+	GPIO_setAsOutputPin(GPIO_PORT_P2, TRIGGER_OUTPUT_SOURCE_A_PIN); //Delayed Trigger source A
+	GPIO_setAsOutputPin(GPIO_PORT_P2, TRIGGER_OUTPUT_SOURCE_B_PIN); //Delayed Trigger source B
 }
 
 /* signalmux_route()
@@ -54,6 +54,7 @@ void signalmux_init()
  * NONE
  *
  */
+
 void signalmux_route(MULTIPLEXER_SOURCE mux, uint16_t route)
 {
 	uint16_t hi = 0;
@@ -62,11 +63,11 @@ void signalmux_route(MULTIPLEXER_SOURCE mux, uint16_t route)
 	/* Based on the supplied multiplexer, populate the hi/lo outputs. */
 	switch (mux)
 	{
-		case MUX_DELAYED_TRIGGER_SOURCE:
-			hi = (route & 0x01) ? (hi | DELAYED_TRIGGER_SOURCE_A_PIN) : hi;//if the low-bit of the route input is high, set the A multiplexer pin.
-			hi = (route & 0x02) ? (hi | DELAYED_TRIGGER_SOURCE_B_PIN) : hi;//if the 2nd bit of the route input is high, set the B multiplexer pin.
+		case MUX_EXTERNAL_TRIGGER_SOURCE:
+			hi = (route & 0x01) ? (hi | TRIGGER_OUTPUT_SOURCE_A_PIN) : hi;//if the low-bit of the route input is high, set the A multiplexer pin.
+			hi = (route & 0x02) ? (hi | TRIGGER_OUTPUT_SOURCE_B_PIN) : hi;//if the 2nd bit of the route input is high, set the B multiplexer pin.
 
-			lo = (~hi & (DELAYED_TRIGGER_SOURCE_A_PIN & DELAYED_TRIGGER_SOURCE_B_PIN));	//set the pins that are not high, low.
+			lo = (~hi & (TRIGGER_OUTPUT_SOURCE_A_PIN & TRIGGER_OUTPUT_SOURCE_B_PIN));	//set the pins that are not high, low.
 			break;
 
 		case MUX_LASER_TRIGGER_SOURCE:

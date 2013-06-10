@@ -13,6 +13,7 @@
 #ifndef DELAY_H_
 #define DELAY_H_
 
+
 #define DELAYED_TRIGGER		1
 #define GENERATED_TRIGGER	2
 

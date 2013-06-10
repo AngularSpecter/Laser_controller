@@ -24,10 +24,23 @@ typedef enum
 {
 	LaserTemperature = 0,
 	LaserCurrent,
-	LaserInterlock
+	LaserInterlock,
+	InterlockOverride
 }LaserInputParameter;
+
+typedef enum
+{
+	mV = 0,
+	Celsius,
+	Fahrenheit,
+	mA
+}Units;
 
 void laser_init();
 uint16_t laser_getValue(LaserInputParameter valueType);
+void laser_setOverride(uint8_t state);
+void laser_setInterlock(uint8_t state);
 
+uint16_t ticks2temp(uint16_t ticks, Units outputUnits);
+uint16_t ticks2current(uint16_t ticks, Units outputUnits);
 #endif /* LASER_H_ */

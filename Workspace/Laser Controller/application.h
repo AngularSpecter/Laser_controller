@@ -42,6 +42,7 @@ typedef uint32_t (*cmdHandlerFunc)(char* parameter);
 		TABLE_ENTRY(laserCurrent, "current") 	\
 		TABLE_ENTRY(laserTemp, "temp") 			\
 		TABLE_ENTRY(laserInterlock, "interlock")\
+		TABLE_ENTRY(interlockOverride, "override") \
 		TABLE_ENTRY(laserTriggerDelay, "triggerDelay")	\
 		TABLE_ENTRY(laserTriggerWidth, "triggerWidth")	\
 		TABLE_ENTRY(laserTriggerEnable, "triggerEnable") \

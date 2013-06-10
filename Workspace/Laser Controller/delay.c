@@ -105,9 +105,8 @@ void delay_init(uint8_t mode)
 	TIMER_D_stop(TIMER_D1_BASE);
 
 	/* Setup signal routing. */
-	signalmux_init();
-	signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
-	signalmux_route(MUX_DELAYED_TRIGGER_SOURCE, SIGNAL_DELAYED_TRIGGER_MCU_OUTPUT);
+
+	signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_OFF);
 
 	if (mode == DELAYED_TRIGGER)
 	{
@@ -146,10 +145,21 @@ void delay_init(uint8_t mode)
 
 		/* Setup the I/O for the TTL OUT Signal. */
 		GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P3, GPIO_PIN1); //setup MCU_TTL1 as a compare output.
+
+		/* Setup the GPIO pins controlling the signal switch */
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_MCU_OUTPUT);
+
 	}
 	else if (mode == GENERATED_TRIGGER)
 	{
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_MCU_OUTPUT);
 		state = delay_generator;
+
+		GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN6);
+		GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN6);
+
+		GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN7);
+		GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN7);
 
 		period = DEFAULT_PERIOD;
 		_delay_setupGeneratedTrigger();
@@ -171,7 +181,20 @@ void delay_init(uint8_t mode)
  */
 void delay_setDelay(uint16_t new_delay)
 {
-	if (new_delay < MAX_DELAY_PERIOD)
+	uint32_t delayMode = delay_getMode();
+
+	/*if we are in delayed mode, use straight external if delay == 0*/
+
+	if (delayMode == DELAYED_TRIGGER & new_delay > 0 & delay == 0)
+	{
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_MCU_OUTPUT);
+	}
+	else if (delayMode == DELAYED_TRIGGER & new_delay == 0 & delay > 0)
+	{
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
+	}
+
+    if (new_delay < MAX_DELAY_PERIOD)
 	{
 		next_delay = new_delay;	//queue up the next delay value.
 	}
@@ -259,7 +282,12 @@ uint16_t delay_getPulseWidth()
  */
 void delay_setPeriod(uint16_t new_period)
 {
-	if (new_period < MAX_PERIOD)
+
+	if (new_period < width)
+	{
+		new_period = width;
+	}
+	else if (new_period < MAX_PERIOD)
 	{
 		period = new_period;	//queue up the next delay value.
 	}
@@ -307,10 +335,12 @@ void delay_setEnable(uint8_t enable)
 		if (lastEnabledState == delay_generator)
 		{
 			state = delay_generator;
+			signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_MCU_OUTPUT);
 		}
 		else
 		{
 			state = delay_idle;
+			signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_EXTERNAL);
 		}
 	}
 	else
@@ -321,6 +351,9 @@ void delay_setEnable(uint8_t enable)
 		/* Stop all of the timers, in case they were started by a previous call. */
 		TIMER_D_stop(TIMER_D0_BASE);
 		TIMER_D_stop(TIMER_D1_BASE);
+
+		/*Disconnect the laser trigger mux*/
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_LASER_OFF);
 	}
 }
 
@@ -371,7 +404,7 @@ uint16_t delay_getMode()
 #pragma vector = TIMER1_D1_VECTOR
 __interrupt void TIMER1_D1_ISR(void)
 {
-	if (TD1IV & TD1IV_TDIFG)
+	if (TD1IV & TD1IV_TD1IFG)
 	{
 		TIMER_D_stop(TIMER_D1_BASE);
 		/* The end of the delay period has been reached, stop the timer. */
@@ -386,7 +419,7 @@ __interrupt void TIMER1_D1_ISR(void)
 #pragma vector = TIMER0_D1_VECTOR
 __interrupt void TIMER0_D1_ISR(void)
 {
-	if (TD0IV & TD0IV_TDCCR1)
+	if (TD0IV & TD0IV_TD0CCR1)
 	{
 		switch (state)
 		{

@@ -108,13 +108,48 @@ uint32_t laserInterlock_handler(char* parameter)
 {
 	uint32_t param = 0;
 
-	/* This is a read-only command. */
+	/*Only allow a value to be written if in override mode*/
 	if (strlen(parameter) != 0)
 	{
-		return NAK;
+		if ( laser_getValue(InterlockOverride) )
+		{
+			param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
+			laser_setInterlock(param);
+		}
+		else
+		{
+			return NAK;
+		}
 	}
 
 	param = laser_getValue(LaserInterlock);
+	sprintf(parameter, "%d", param); //return the current or newly set trigger delay.
+	return 0;
+}
+
+/* interlockOverride_handler()
+ *
+ * Returns the laser interlock override status.  Allows the MCU to override the external
+ * hardware interlock
+ *
+ * Arguments:
+ * parameter:	The parameter value to the command (if a write operation)
+ *
+ * Returns:
+ * The output of the command to return to the user.
+ *
+ */
+uint32_t interlockOverride_handler(char* parameter)
+{
+	uint32_t param = 0;
+
+	if (strlen(parameter) != 0)
+	{
+		param = strtol(parameter, NULL, 10); //convert the parameter to the numeric value.
+		laser_setOverride(param);
+	}
+
+	param = laser_getValue(InterlockOverride);
 	sprintf(parameter, "%d", param); //return the current or newly set trigger delay.
 	return 0;
 }
@@ -189,6 +224,7 @@ uint32_t laserTriggerEnable_handler(char* parameter)
 	return 0;
 }
 
+
 uint32_t lasertriggerMode_handler(char* parameter)
 {
 	/* Setup trigger signal chain. */
@@ -201,7 +237,12 @@ uint32_t lasertriggerMode_handler(char* parameter)
 		/* Reconfigure the delay trigger based on the parameter. */
 		switch (param)
 		{
-			/* External Delay. */
+			    /* Delay line disconnected */
+		    case EMISSION_OFF:
+		    	delay_init(EMISSION_OFF);
+		    	break;
+
+		    	/* External Delay. */
 			case DELAYED_TRIGGER:
 				delay_init(DELAYED_TRIGGER);
 				break;
