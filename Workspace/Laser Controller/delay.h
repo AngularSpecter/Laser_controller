@@ -17,6 +17,10 @@
 #define DELAYED_TRIGGER		1
 #define GENERATED_TRIGGER	2
 
+
+#define DELAY_TICK	1
+#define DELAY_US 	16 * DELAY_TICK
+
 void delay_init(uint8_t mode);
 uint16_t delay_getMode();
 
