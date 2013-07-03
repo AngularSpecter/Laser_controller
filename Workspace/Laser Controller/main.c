@@ -112,7 +112,7 @@ void main()
 	while (1)
 	{
 		/* Process any incoming commands. */
-		application_processCommandsTask();
+		application_processCmdTasks();
 
 		i = TIMER_A_getCounterValue(TIMER_A0_BASE);
 		tick_executeAfter(lcd_timer, 500 * MILLISECOND, _update_lcd());
