@@ -95,7 +95,7 @@ void main()
 	signalmux_init();
 
 	/* Setup the delay subsystem. */
-	delay_init(GENERATED_TRIGGER);
+	delay_init(DELAYED_TRIGGER);
 
 	/* Setup the I/O expander. */
 	lcd_init();
