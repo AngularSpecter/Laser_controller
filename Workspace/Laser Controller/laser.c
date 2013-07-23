@@ -160,11 +160,11 @@ void laser_setOverride(uint8_t state)
     	/*Set pin value to match current setting*/
     	if (old_val)
     	{
-    		P2DIR |= GPIO_PIN3;
+    		P2OUT  |= GPIO_PIN3;
     	}
     	else
     	{
-    	   P2DIR &= ~GPIO_PIN3;
+    		P2OUT &= ~GPIO_PIN3;
     	}
 
     }
@@ -172,7 +172,7 @@ void laser_setOverride(uint8_t state)
      * reset pin to input state                        */
     else if (~state & laser_getValue(InterlockOverride) )
     {
-    	P2DIR &= ~GPIO_PIN3;
+    	P2OUT &= ~GPIO_PIN3;
     }
 }
 
