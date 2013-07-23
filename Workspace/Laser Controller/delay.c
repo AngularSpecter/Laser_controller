@@ -194,7 +194,7 @@ void delay_setDelay(uint16_t new_delay)
 		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
 	}
 
-    if (new_delay < MAX_DELAY_PERIOD)
+	if (new_delay < MAX_DELAY_PERIOD)
 	{
 		next_delay = new_delay;	//queue up the next delay value.
 	}
@@ -335,12 +335,12 @@ void delay_setEnable(uint8_t enable)
 		if (lastEnabledState == delay_generator)
 		{
 			state = delay_generator;
-			signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_MCU_OUTPUT);
+			signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_MCU_OUTPUT);
 		}
 		else
 		{
 			state = delay_idle;
-			signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_EXTERNAL);
+			signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_TRIGGER_EXTERNAL);
 		}
 	}
 	else
@@ -353,7 +353,7 @@ void delay_setEnable(uint8_t enable)
 		TIMER_D_stop(TIMER_D1_BASE);
 
 		/*Disconnect the laser trigger mux*/
-		signalmux_route(MUX_LASER_TRIGGER_SOURCE, LASER_TRIGGER_LASER_OFF);
+		signalmux_route(MUX_LASER_TRIGGER_SOURCE, SIGNAL_LASER_OFF);
 	}
 }
 
